@@ -176,7 +176,7 @@
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
           </ul>
-          <button>Подробнее о компании</button>
+          <a href="blank.html">Подробнее о компании</a>
         </section>
         <section>
           <h3>КОНТАКТЫ</h3>
@@ -184,8 +184,8 @@
             Вы можете забрать товар сами,<br>
             заехав в наш офис:
           </p>
-          <img src="https://via.placeholder.com/150x100" width="300" height="158" alt="">
-          <button>Заблудились? Напишите нам!</button>
+          <a href="#"><img src="https://via.placeholder.com/150x100" width="300" height="158" alt=""></a>
+          <button type="button">Заблудились? Напишите нам!</button>
         </section>
       </section>
     </main>
@@ -229,16 +229,33 @@
         </p>
         <p>
           Разработано —<br>
-          <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</ф>
+          <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </p>
       </section>
     </footer>
 
     <section>
-      <h2>Форма обратной связи.</h2>
+      <h2>Форма обратной связи</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
-        
+        <p>
+          <label for="name">Ваше имя:</label>
+          <input type="text" id="name" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="e-mail">Ваш e-mail:</label>
+          <input type="text" id="e-mail" name="e-mail" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="text">Текст письма:</label>
+          <textarea name="text" id="text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+        </p>
       </form>
+      <button type="button">Закрыть</button>
+    </section>
+
+    <section>
+      <h2>Как до нас добраться</h2>
+      <!-- Здесь будет карта -->
       <button type="button">Закрыть</button>
     </section>
 
