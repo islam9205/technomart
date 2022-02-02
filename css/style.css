@@ -75,11 +75,15 @@
   --cry-logo-open-catalog: #ba2732;
   --cry-header-upper: #161d29;
   --guidance-checkout-buy: #5fbb2d;
+  --cry-buy: #518534;
   --guidance-login: #3d546f;
   --cry-header-menu: #1d2739;
   --guidance-open-catalog: #ca2c37;
+  --guidance-blocked-checkbox: #b5b5b5;
 
   /* shadow colors */
+  --peace-buy: #367315;
+  --slider-ervices: #405069;
 
 
   /* border colors */
