@@ -69,6 +69,7 @@
   --promo-block-technics: #dc91d8;
   --promo-block-discount: #8ed78f;
   --header-goods: #f9f5f0;
+  --filter-sorting: #f7f3ec;
 
   /* background color on action */
   --cry-logo-open-catalog: #ba2732;
@@ -80,9 +81,11 @@
 
   /* shadow colors */
 
+
   /* border colors */
   --border-form: #c5c5c5;
   --border-cards: #eaeaea;
+  --border-card-pages: #e5e5e5;
 
   /* gradient colors */
   --social-network: #212a3a;
