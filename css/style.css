@@ -61,8 +61,21 @@
   --menu-footer-upper: #f1f5f7;
   --menu-footer-lower: #ffd180;
 
-  --color-border-form: #c5c5c5;
+  /* border colors */
+  --border-form: #c5c5c5;
+  --border-cards: #eaeaea;
 
   /* background color */
   --header-upper: #293449;
+  --header-upper-cry: #161d29;
+  --checkout-buy: #63a63e;
+  --checkout-buy-guidance: #5fbb2d;
+  --promo-block-materials-delivery: #ffbf47;
+  --promo-block-tool: #3bbce3;
+  --promo-block-technics: #dc91d8;
+  --promo-block-discount: #8ed78f;
+  --header-goods: #f9f5f0;
+
+  /* gradient colors */
+  --social-network: #212a3a;
 }
