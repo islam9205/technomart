@@ -94,3 +94,11 @@
   /* gradient colors */
   --social-network: #212a3a;
 }
+
+.main-header{
+  background-color: var(--menu-footer-upper);
+}
+
+.main-header__upper {
+  background-color: var(--header-upper);
+}
