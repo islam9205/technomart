@@ -51,8 +51,18 @@
 /* Variables */
 
 :root {
-  --color-main-text: #fff;
-  --color-text-in-header: #ee3643;
-  --color-heading-text: #32425c;
-  --color-card-blanks: #000;
+  /* text colors */
+  --text-main: #fff;
+  --text-in-header: #ee3643;
+  --text-heading: #32425c;
+  --color-frequently-used: #000;
+  --text-cards: #a9a9a9;
+  --text-footer: #f3f7f9;
+  --menu-footer-upper: #f1f5f7;
+  --menu-footer-lower: #ffd180;
+
+  --color-border-form: #c5c5c5;
+
+  /* background color */
+  --header-upper: #293449;
 }
