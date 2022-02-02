@@ -95,7 +95,14 @@
   --social-network: #212a3a;
 }
 
-.main-header{
+.page-body {
+  margin: 0;
+  padding: 0;
+}
+
+/* main-header */
+
+.main-header {
   background-color: var(--menu-footer-upper);
 }
 
