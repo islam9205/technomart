@@ -145,7 +145,19 @@
 }
 
 .main-header__upper {
+  display: flex;
+  height: 42px;
+  padding: 0 130px;
   background-color: var(--header-upper);
+}
+
+.upper-mh__input {
+  width: 271px;
+  height: 100%;
+}
+
+.upper-mh__input:focus {
+  outline: none;
 }
 
 /*
