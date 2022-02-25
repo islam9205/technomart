@@ -145,15 +145,23 @@
 }
 
 .main-header__upper {
-  display: flex;
+  display: flex;  
   height: 42px;
   padding: 0 130px;
   background-color: var(--header-upper);
 }
 
 .upper-mh__input {
+  font-size: 18px;
+  line-height: 24px;
   width: 271px;
   height: 100%;
+  padding-left: 42px;
+  background: url(../img/shape.svg) no-repeat 17px 50%;
+}
+
+.upper-mh__input::placeholder {
+  color: var(--text-main);
 }
 
 .upper-mh__input:focus {
