@@ -100,6 +100,44 @@
   padding: 0;
 }
 
+.visuallyhidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* 
+.title {
+
+}
+
+.button {
+
+}
+
+.catolog__list {
+
+}
+
+.catolog__item {
+
+}
+
+.catolog-text {
+
+}
+*/
+
 /* main-header */
 
 .main-header {
@@ -109,3 +147,40 @@
 .main-header__upper {
   background-color: var(--header-upper);
 }
+
+/*
+.bookmarks-basket {
+  
+}
+
+.authorization {
+
+}
+
+.site-navigation {
+
+}
+*/
+
+
+/* promo-block */
+
+/* .promo-block__item {
+
+} */
+
+/* manufacturers */
+
+/* .manufacturers__list {
+
+}
+
+.manufacturers__item {
+
+} */
+
+/* page catolog */
+
+/* .filter__text {
+
+} */
