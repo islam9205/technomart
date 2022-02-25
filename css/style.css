@@ -100,6 +100,13 @@
   padding: 0;
 }
 
+header,
+main,
+footer {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .visuallyhidden {
   position: absolute;
 
@@ -152,12 +159,17 @@
 }
 
 .upper-mh__input {
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   width: 271px;
   height: 100%;
   padding-left: 42px;
-  background: url(../img/shape.svg) no-repeat 17px 50%;
+  border: none;
+  background: var(--header-upper) url(../img/shape.svg) no-repeat 17px 50%;
+   
+  /* filter: url(../img/shape.svg); */
+  /* mask-image: url('../img/shape.svg'); */
 }
 
 .upper-mh__input::placeholder {
@@ -166,6 +178,12 @@
 
 .upper-mh__input:focus {
   outline: none;
+}
+
+.upper-mh__link {
+  display: block;
+  padding: 9px 16px;
+  /* width: 150px; */
 }
 
 /*
