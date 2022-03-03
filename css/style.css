@@ -96,6 +96,7 @@
 }
 
 .page-body {
+  font-family: "Cuprum", "Arial", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -186,10 +187,35 @@ footer {
   outline: none;
 }
 
+.upper-mh__link,
+.site-navigation-mh__link {
+  color: var(--text-main);
+  text-decoration: none;
+}
+
 .upper-mh__link {
   display: block;
   padding: 9px 16px;
-  /* width: 150px; */
+}
+
+.lower-mh__text {
+  color: var(--text-in-header);
+}
+
+.lower-mh__authorization,
+.lower-mh__authorization-item {
+  text-decoration: none;
+  color: var(--color-frequently-used);
+}
+
+.lower-mh__item {
+  list-style: none;
+}
+
+.main-header__site-navigation {
+  list-style: none;
+  background-color: var(--text-heading);
+  color: var(--text-main);
 }
 
 /*
