@@ -97,6 +97,8 @@
 
 .page-body {
   font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
   margin: 0;
   padding: 0;
 }
@@ -124,7 +126,7 @@ footer {
   overflow: hidden;
 }
 
-/* 
+/*
 .title {
 
 }
@@ -149,13 +151,18 @@ footer {
 /* main-header */
 
 .main-header {
+  /* height: 320px; */
   background-color: var(--menu-footer-upper);
 }
 
-.main-header__upper {
-  display: flex;  
-  height: 42px;
+.main-header__upper,
+.main-header__lower {
   padding: 0 130px;
+}
+
+.main-header__upper {
+  display: flex;
+  height: 42px;
   background-color: var(--header-upper);
 }
 
@@ -187,6 +194,12 @@ footer {
   outline: none;
 }
 
+/*
+.bookmarks-basket {
+
+}
+*/
+
 .upper-mh__link,
 .site-navigation-mh__link {
   color: var(--text-main);
@@ -196,6 +209,10 @@ footer {
 .upper-mh__link {
   display: block;
   padding: 9px 16px;
+}
+
+.upper-mh__link_colors {
+  background-color: var(--checkout-buy);
 }
 
 .lower-mh__text {
@@ -216,24 +233,13 @@ footer {
   list-style: none;
   background-color: var(--text-heading);
   color: var(--text-main);
+  margin: 0 130px;
 }
-
-/*
-.bookmarks-basket {
-  
-}
-
-.authorization {
-
-}
-
-.site-navigation {
-
-}
-*/
-
 
 /* promo-block */
+
+
+
 
 /* .promo-block__item {
 
