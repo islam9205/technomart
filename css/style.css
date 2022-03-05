@@ -120,6 +120,16 @@
   overflow: hidden;
 }
 
+.container {
+  width: 940px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+
+.container-1 {
+  margin-bottom: 59px;
+}
+
 /*
 .title {
 
@@ -232,7 +242,28 @@
 
 /* promo-block */
 
+.promo-block-item {
+  list-style: none;
+  background-color: var(--promo-block-materials-delivery);
+}
 
+.promo-block-item-2 {
+  background-color: var(--promo-block-tool);
+}
+
+.promo-block-item-3 {
+  background-color: var(--promo-block-technics);
+}
+
+.promo-block-item-4 {
+  background-color: var(--promo-block-discount);
+}
+
+.promo-block-link {
+  text-decoration: none;
+  color: var(--text-main);
+  background-color: rgba(255, 255, 255, 0.3);
+}
 
 
 /* .promo-block__item {
