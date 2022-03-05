@@ -99,15 +99,9 @@
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
-  margin: 0;
-  padding: 0;
-}
-
-header,
-main,
-footer {
   width: 1200px;
   margin: 0 auto;
+  padding: 0;
 }
 
 .visuallyhidden {
