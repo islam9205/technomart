@@ -298,10 +298,20 @@ a {
   color: var(--text-main);
 }
 
-.promo-block__link {
+.promo-block__link,
+.slider-pb__link {
+  font-size: 14px;
+  line-height: 18px;
   text-transform: uppercase;
   color: var(--text-main);
+}
+
+.promo-block__link {
   background-color: rgba(255, 255, 255, 0.3);
+}
+
+.slider-pb__link {
+  background-color: var(--text-in-header)
 }
 
 
