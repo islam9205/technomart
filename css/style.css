@@ -384,8 +384,38 @@ a {
 
 /* services */
 
+.services {
+  background: var(--menu-footer-upper);
+}
+
 .services__text {
   font-size: 13px;
+}
+
+.services__title {
+  color: var(--text-heading);
+}
+
+/* contacts */
+
+.contacts-text {
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-size: 13px;
+}
+
+.contacts-list {
+  list-style: none;
+}
+
+.contacts-list li::before {
+  content: '';
+  width: 25px;
+  height: 2px;
+  background-color: var(--text-in-header);
+}
+
+.contacts-list li {
+  margin-bottom: 12px;
 }
 
 /* page catolog */
