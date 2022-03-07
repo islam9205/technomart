@@ -429,8 +429,55 @@ a {
 /* footer */
 
 .page-footer {
+  color: var(--text-main);
   background-color: var(--text-heading);
 }
+
+.page-footer_color {
+  color: var(--menu-footer-lower);
+}
+
+.page-footer ul {
+  list-style: none;
+}
+
+.page-footer__link {
+  color: inherit;
+}
+
+/* reverse-connection and map */
+
+.reverse-connection,
+.map {
+  border-top: 7px solid var(--text-in-header);
+}
+
+/* reverse-connection */
+
+.form-rc__box {
+  display: flex;
+}
+
+.form-rc__input,
+.form-rc__text-mail {
+  border: 2px solid var(--border-form);
+}
+
+.form-rc__input {
+  width: 220px;
+  height: 38px;
+}
+
+.form-rc__text-mail {
+  width: 100%;
+  max-height: 114px;
+  resize: none;
+}
+
+.form-rc__button {
+  border: none;
+}
+
 
 
 /* page catolog */
