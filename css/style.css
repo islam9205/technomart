@@ -100,7 +100,7 @@ a {
 }
 
 .page-body {
-  font-family: "Cuprum", "Arial", sans-serif;
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-size: 18px;
   line-height: 24px;
   width: 1200px;
@@ -136,6 +136,11 @@ a {
   background-color: var(--header-goods);
 }
 
+.title {
+  font-size: 30px;
+  line-height: 30px;
+}
+
 .button {
   font-size: 14px;
   line-height: 18px;
@@ -144,25 +149,52 @@ a {
   background-color: var(--text-in-header);
 }
 
-/*
-.title {
-
+.catolog-list {
+  list-style: none;
 }
 
-
-
-.catolog__list {
-
+.catolog-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid var(--border-cards);
 }
 
-.catolog__item {
-
+.catolog-pic {
+  background-color: rgba(0, 0, 0, 0.0001);
+  margin-top: 6px;
+  margin-bottom: 8px;
 }
 
-.catolog-text {
-
+.catolog-title {
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  line-height: 20px;
+  color: var(--color-frequently-used);
+  margin-top: 0;
+  margin-bottom: 6.86px;
 }
-*/
+
+.catolog-old-price,
+.catolog-new-price {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  margin-top: 0;
+}
+
+.catolog-old-price {
+  color: var(--text-cards);
+  text-decoration-line: line-through;
+  margin-bottom: 13.14px;
+}
+
+.catolog-new-price {
+  width: 141px;
+  height: 38px;
+  color: var(--text-main);
+  background: url(../img/new-price.svg) no-repeat;
+  margin-bottom: 21px;
+}
 
 /* main-header */
 
@@ -183,9 +215,6 @@ a {
 }
 
 .upper-mh__input {
-  font-family: "Cuprum", "Arial", sans-serif;
-  font-size: 18px;
-  line-height: 24px;
   width: 271px;
   height: 100%;
   padding-left: 42px;
@@ -287,9 +316,12 @@ a {
   margin-bottom: 59px;
 }
 
-.promo-block__item {
+.promo-block__list {
   list-style: none;
-  background-color: var(--promo-block-materials-delivery);
+}
+
+.promo-block__item-1 {
+  background: var(--promo-block-materials-delivery) url(../img/new.png) no-repeat 100% 0;
 }
 
 .promo-block__item-2 {
@@ -302,6 +334,10 @@ a {
 
 .promo-block__item-4 {
   background-color: var(--promo-block-discount);
+}
+
+.promo-block__item-5 {
+  background-color: var(--promo-block-materials-delivery);
 }
 
 .promo-block__title {
@@ -333,13 +369,24 @@ a {
 
 /* manufacturers */
 
-/* .manufacturers__list {
-
+.manufacturers-list {
+  list-style: none;
 }
 
-.manufacturers__item {
+.manufacturers-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 145px;
+  border: 1px solid var(--border-cards);
+}
 
-} */
+/* services */
+
+.services__text {
+  font-size: 13px;
+}
 
 /* page catolog */
 
