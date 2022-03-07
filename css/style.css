@@ -407,16 +407,31 @@ a {
   list-style: none;
 }
 
+.contacts-list li {
+  position: relative;
+  margin-bottom: 12px;
+}
+
 .contacts-list li::before {
   content: '';
   width: 25px;
   height: 2px;
   background-color: var(--text-in-header);
+  position: absolute;
+  top: 40%;
+  left: -37px;
 }
 
-.contacts-list li {
-  margin-bottom: 12px;
+.contacts-button {
+  border: 0;
 }
+
+/* footer */
+
+.page-footer {
+  background-color: var(--text-heading);
+}
+
 
 /* page catolog */
 
