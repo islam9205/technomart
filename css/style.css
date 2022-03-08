@@ -168,7 +168,6 @@ a {
 }
 
 .catalog-title {
-
   line-height: 20px;
   color: var(--color-frequently-used);
   margin-top: 0;
@@ -483,17 +482,30 @@ a {
 
 /* page catalog */
 
-.page-main-catalog:not(.title) {
+.page-main-catalog {
   font-family: 'PT sans', 'Arial', sans-serif;
+}
+
+.page-catalog-title {
+  font-family: 'Cuprum', 'Arial', sans-serif;
+}
+
+.filter,
+.sorting {
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
 }
 
 /* breadcrumbs */
 
 .breadcrumbs {
-
   font-size: 13px;
   line-height: 18px;
-  text-transform: uppercase;
   list-style: none;
 }
 
@@ -501,7 +513,10 @@ a {
   color: var(--color-frequently-used);
 }
 
+/* filter */
 
-/* .filter__text {
-
-} */
+.filter__legend {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+}
