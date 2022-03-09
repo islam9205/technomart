@@ -520,3 +520,24 @@ a {
   font-size: 17px;
   line-height: 30px;
 }
+
+.filter__price {
+  background-color: var(--filter-sorting);
+}
+
+.filter__price-input {
+  border: none;
+}
+
+.filter__item {
+  margin-bottom: 20px;
+}
+
+.filter__item-radio {
+  margin-bottom: 22.5px;
+}
+
+.filter__label {
+  font-size: 15px;
+  line-height: 19px;
+}

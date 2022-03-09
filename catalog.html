@@ -79,47 +79,47 @@
         <form action="https://echo.htmlacademy.ru" method="post">
           <fieldset>
             <legend class="filter__legend">Цена:</legend>
-            <input type="range" name="Цена" min="0" max="30000" step="1">
+            <input class="filter__price" type="range" name="Цена" min="0" max="30000" step="1">
             <p>
-              <input type="number" name="от" value="0" min="0" max="30000">
-              <input type="number" name="до" value="30000" min="0" max="30000">
+              <input class="filter__price filter__price-input" type="number" name="от" value="0" min="0" max="30000">
+              <input class="filter__price filter__price-input" type="number" name="до" value="30000" min="0" max="30000">
             </p>
           </fieldset>
           <fieldset>
             <legend class="filter__legend">Производители:</legend>
             <ul>
-              <li>
+              <li class="filter__item">
                 <input type="checkbox" id="bosch" name="Bosch" checked>
-                <label for="bosch">Bosch</label>
+                <label class="filter__label" for="bosch">Bosch</label>
               </li>
-              <li>
+              <li class="filter__item">
                 <input type="checkbox" id="interskol" name="Interskol">
-                <label for="interskol">Interskol</label>
+                <label class="filter__label" for="interskol">Interskol</label>
               </li>
-              <li>
+              <li class="filter__item">
                 <input type="checkbox" id="makita" name="Makita" checked>
-                <label for="makita">Makita</label>
+                <label class="filter__label" for="makita">Makita</label>
               </li>
-              <li>
+              <li class="filter__item">
                 <input type="checkbox" id="dewalt" name="Dewalt">
-                <label for="dewalt">Dewalt</label>
+                <label class="filter__label" for="dewalt">Dewalt</label>
               </li>
-              <li>
+              <li class="filter__item">
                 <input type="checkbox" id="hitachi" name="Hitachi">
-                <label for="hitachi">Hitachi</label>
+                <label class="filter__label" for="hitachi">Hitachi</label>
               </li>
             </ul>
           </fieldset>
           <fieldset>
             <legend class="filter__legend">Питание:</legend>
             <ul>
-              <li>
-                <input type="radio" id="rechargeable" name="Питание" value="Аккумуляторные">
-                <label for="rechargeable">Аккумуляторные</label>
+              <li class="filter__item filter__item-radio">
+                <input type="radio" id="rechargeable" name="Питание" value="Аккумуляторные" checked>
+                <label class="filter__label" for="rechargeable">Аккумуляторные</label>
               </li>
-              <li>
+              <li class="filter__item">
                 <input type="radio" id="network" name="Питание" value="Сетевые">
-                <label for="network">Сетевые</label>
+                <label class="filter__label" for="network">Сетевые</label>
               </li>
             </ul>
           </fieldset>
@@ -132,7 +132,7 @@
           <li><a href="#">По цене</a></li>
           <li><a href="#">По типу</a></li>
           <li><a href="#">По функционалу</a></li>
-          <li><a href="#"></a></li>
+          <li><a href="#"><img src="./img/" alt=""></a></li>
           <li><a href="#"></a></li>
         </ul>
       </section>
