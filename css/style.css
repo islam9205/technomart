@@ -478,8 +478,6 @@ a {
   border: none;
 }
 
-
-
 /* page catalog */
 
 .page-main-catalog {
@@ -493,6 +491,11 @@ a {
 .filter,
 .sorting {
   text-transform: uppercase;
+}
+
+.filter ul,
+.sorting ul {
+  list-style: none;
 }
 
 .subtitle {
@@ -540,4 +543,41 @@ a {
 .filter__label {
   font-size: 15px;
   line-height: 19px;
+}
+
+/* sorting */
+
+.sorting__link {
+  color: var(--color-frequently-used);
+  opacity: 0.3;
+  text-decoration: none;
+  border-bottom: 1px dotted var(--text-in-header);
+}
+
+.sorting__link-active {
+  color: var(--text-in-header);
+  opacity: 1;
+  border-bottom: none;
+}
+
+/* description */
+
+.description-text {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+/* added-to-cart */
+
+.added-to-cart {
+  border-top: 7px solid var(--text-in-header);
+}
+
+.added-to-cart__title {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.added-to-cart__title::before {
+  content: url(../img/icon-mark.svg);
 }
