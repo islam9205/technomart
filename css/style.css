@@ -70,6 +70,7 @@
   --promo-block-discount: #8ed78f;
   --header-goods: #f9f5f0;
   --filter-sorting: #f7f3ec;
+  --added-to-cart: #f1f1f1;
 
   /* background color on action */
   --cry-logo-open-catalog: #ba2732;
@@ -580,4 +581,16 @@ a {
 
 .added-to-cart__title::before {
   content: url(../img/icon-mark.svg);
+}
+
+.added-to-cart__box {
+  background-color: var(--added-to-cart);
+}
+
+.added-to-cart__button {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border: none;
+  background-color: var(--text-main);
 }
