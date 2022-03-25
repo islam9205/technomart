@@ -168,6 +168,29 @@ a {
   margin-bottom: 8px;
 }
 
+.catalog-button-buy,
+.catalog-button-bookmarks {
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.catalog-button-buy {
+  color: var(--text-main);
+  background: var(--checkout-buy);
+  box-shadow: inset 0px -3px 0px var(--peace-buy);
+  border-radius: 2px;
+}
+
+.catalog-button-bookmarks {
+  background: var(--text-main);
+  border: 3px solid #63A63E;
+  /* box-sizing: border-box; */
+  border-radius: 2px;
+}
+
 .catalog-title {
   line-height: 20px;
   color: var(--color-frequently-used);
