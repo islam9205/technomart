@@ -134,7 +134,7 @@ a {
 .container {
   width: 940px;
   margin: 0 auto;
-  margin-bottom: 70px;
+  /* margin-bottom: 70px; */
 }
 
 .container-tb {
