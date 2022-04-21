@@ -96,17 +96,25 @@
   --social-network: #212a3a;
 }
 
+.page {
+  height: 100%;
+}
+
 a {
   text-decoration: none;
 }
 
 .page-body {
+  margin: 0 auto;
+  padding: 0;
+  width: 1200px;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
   font-family: 'Cuprum', 'Arial', sans-serif;
   font-size: 18px;
   line-height: 24px;
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0;
 }
 
 .visuallyhidden {
