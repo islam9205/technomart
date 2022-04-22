@@ -290,6 +290,13 @@ a {
   background-color: var(--checkout-buy);
 }
 
+.lower-mh {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 41px;
+  padding-bottom: 44.5px;
+}
+
 .lower-mh__text,
 .lower-mh__text-tel {
   color: var(--text-in-header);
@@ -334,10 +341,20 @@ a {
 }
 
 .main-header__site-navigation {
+  display: flex;
+
   list-style: none;
   padding-left: 0;
   background-color: var(--text-heading);
   color: var(--text-main);
+}
+
+.site-navigation-mh__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 112px;
+  height: 60px;
 }
 
 /* promo-block */
