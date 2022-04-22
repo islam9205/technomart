@@ -16,46 +16,52 @@
 
     <header class="main-header">
       <nav>
-        <section class="main-header__upper upper-mh">
+        <section class="main-header__upper">
           <h2 class="visuallyhidden">Выбранные товары</h2>
-          <a href="index.html"><img src="img/logo.png" width="220" height="47" alt="Логотип сайта"></a>
-          <form>
-            <input class="upper-mh__input" type="search" placeholder="Поиск:">
-          </form>
-          <a class="upper-mh__link upper-mh__bookmarks-basket" href="blank.html">Закладки: <span>0</span></a>
-          <a class="upper-mh__link upper-mh__bookmarks-basket" href="blank.html">Корзина: <span>0</span></a>
-          <a class="upper-mh__link upper-mh__link_colors" href="blank.html">Оформить заказ</a>
+          <div class="container upper-mh">
+            <a class="upper-mh__link-logo">
+              <img src="img/logo.png" width="220" height="47" alt="Логотип сайта">
+            </a>
+            <form class="upper-mh__form">
+              <input class="upper-mh__input" type="search" placeholder="Поиск:">
+            </form>
+            <a class="upper-mh__link" href="blank.html">Закладки: <span>0</span></a>
+            <a class="upper-mh__link" href="blank.html">Корзина: <span>0</span></a>
+            <a class="upper-mh__link upper-mh__link_colors" href="blank.html">Оформить заказ</a>
+          </div>
         </section>
-        <section class="main-header__lower lower-mh">
+        <section class="main-header__lower">
           <h2 class="visuallyhidden">Контакты и регистрация</h2>
-          <p class="lower-mh__text">
-            Интернет-магазин<br>
-            строительных материалов<br>
-            и инструментов для ремонта
-          </p>
-          <section>
-            <h3 class="visuallyhidden">Телефон и адрес</h3>
-            <p class="lower-mh__text-tel">+7 800 555-86-28</p>
-            <p class="lower-mh__text-address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
-          </section>
-          <section>
-            <h3 class="visuallyhidden">Блок авторизации</h3>
+          <div class="container lower-mh">
+            <p class="lower-mh__text">
+              Интернет-магазин<br>
+              строительных материалов<br>
+              и инструментов для ремонта
+            </p>
             <section>
-              <h4 class="visuallyhidden">Не авторизованная страница</h4>
-              <a class="lower-mh__authorization" href="blank.html">Войти</a>
-              <a class="lower-mh__authorization" href="blank.html">Регистрация</a>
+              <h3 class="visuallyhidden">Телефон и адрес</h3>
+              <p class="lower-mh__text-tel">+7 800 555-86-28</p>
+              <p class="lower-mh__text-address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
             </section>
             <section>
-              <h4 class="visuallyhidden">Авторизованная страница</h4>
-              <a class="lower-mh__authorization" href="#">Cсылка деавторизации</a>
-              <ul>
-                <li class="lower-mh__item"><a class="lower-mh__authorization-item" href="#">Мои заказы</a></li>
-                <li><a class="lower-mh__authorization-item" href="#">Личный кабинет</a></li>
-              </ul>
+              <h3 class="visuallyhidden">Блок авторизации</h3>
+              <section>
+                <h4 class="visuallyhidden">Не авторизованная страница</h4>
+                <a class="lower-mh__authorization" href="blank.html">Войти</a>
+                <a class="lower-mh__authorization" href="blank.html">Регистрация</a>
+              </section>
+              <section>
+                <h4 class="visuallyhidden">Авторизованная страница</h4>
+                <a class="lower-mh__authorization" href="#">Cсылка деавторизации</a>
+                <ul>
+                  <li class="lower-mh__item"><a class="lower-mh__authorization-item" href="#">Мои заказы</a></li>
+                  <li><a class="lower-mh__authorization-item" href="#">Личный кабинет</a></li>
+                </ul>
+              </section>
             </section>
-          </section>
+          </div>
         </section>
-        <ul class="main-header__site-navigation site-navigation-mh">
+        <ul class="container main-header__site-navigation site-navigation-mh">
           <li><a class="site-navigation-mh__link" href="index.html">Главная</a></li>
           <li><a class="site-navigation-mh__link" href="blank.html">Компания</a></li>
           <li><a class="site-navigation-mh__link" href="catalog.html">Каталог</a></li>

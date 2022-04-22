@@ -229,17 +229,10 @@ a {
 /* main-header */
 
 .main-header {
-  /* height: 320px; */
   background-color: var(--menu-footer-upper);
 }
-/*
-.main-header__upper,
-.main-header__lower {
-  padding: 0 130px;
-}
- */
+
 .main-header__upper {
-  min-height: 42px;
   background-color: var(--header-upper);
 }
 
@@ -283,12 +276,6 @@ a {
 .upper-mh__input:focus {
   outline: none;
 }
-
-/*
-.bookmarks-basket {
-
-}
-*/
 
 .upper-mh__link,
 .site-navigation-mh__link {
