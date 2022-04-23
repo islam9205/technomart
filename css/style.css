@@ -136,7 +136,14 @@ a {
   margin: 0 auto;
 }
 
+.index-catalog,
+.manufacturers {
+  margin-bottom: 70px;
+}
+
 .container-tb {
+  margin-bottom: 20px;
+  min-height: 89px;
   display: flex;
   justify-content: space-between;
   background-color: var(--header-goods);
@@ -155,9 +162,19 @@ a {
   background-color: var(--text-in-header);
 }
 
+.index-catalog-list,
 .catalog-list {
+  margin: 0;
+  padding-left: 0;
   font-family: 'PT Sans', 'Arial', sans-serif;
   list-style: none;
+}
+
+.catalog-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
 }
 
 .catalog-item {
@@ -226,6 +243,8 @@ a {
 
 .main-header {
   background-color: var(--menu-footer-upper);
+  padding-bottom: 60px;
+  margin-bottom: 59px;
 }
 
 .main-header__upper {
@@ -294,7 +313,7 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding-top: 41px;
-  padding-bottom: 44.5px;
+  padding-bottom: 40px;
 }
 
 .lower-mh__text,
@@ -365,27 +384,43 @@ a {
 }
 
 .promo-block__list {
+  margin: 0;
+  padding-left: 0;
   list-style: none;
+  display: grid;
+  grid-template-areas:
+    "materials tool technics"
+    "slider slider discounts"
+    "slider slider delivery";
 }
 
 .promo-block__item-1 {
+  grid-area: materials;
   background: var(--promo-block-materials-delivery) url(../img/new.png) no-repeat 100% 0;
 }
 
 .promo-block__item-2 {
+  grid-area: tool;
   background-color: var(--promo-block-tool);
 }
 
 .promo-block__item-3 {
+  grid-area: technics;
   background-color: var(--promo-block-technics);
 }
 
 .promo-block__item-4 {
+  grid-area: discounts;
   background-color: var(--promo-block-discount);
 }
 
 .promo-block__item-5 {
+  grid-area: delivery;
   background-color: var(--promo-block-materials-delivery);
+}
+
+.promo-block__item-6 {
+  grid-area: slider;
 }
 
 .promo-block__title {
@@ -415,19 +450,39 @@ a {
 
 } */
 
+/* index-catalog-list */
+
+.index-catalog-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
 /* manufacturers */
 
 .manufacturers-list {
+  margin: 0;
+  padding-left: 0;
   list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
 }
 
 .manufacturers-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 220px;
   height: 145px;
   border: 1px solid var(--border-cards);
+  box-sizing: border-box;
+}
+
+.manufacturers-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 /* services */
