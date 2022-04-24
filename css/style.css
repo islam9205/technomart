@@ -244,7 +244,6 @@ a {
 .main-header {
   background-color: var(--menu-footer-upper);
   padding-bottom: 60px;
-  margin-bottom: 59px;
 }
 
 .main-header__upper {
@@ -380,6 +379,7 @@ a {
 
 
 .promo-block {
+  margin-top: 59px;
   margin-bottom: 59px;
 }
 
@@ -392,6 +392,7 @@ a {
     "materials tool technics"
     "slider slider discounts"
     "slider slider delivery";
+  gap: 20px;
 }
 
 .promo-block__item-1 {
@@ -488,18 +489,44 @@ a {
 /* services */
 
 .services {
+  padding: 64px 0 99px;
   background: var(--menu-footer-upper);
+}
+
+.services__title {
+  margin-top: 0;
 }
 
 .services__text {
   font-size: 13px;
 }
 
-.services__title {
+.services-vremeno__title {
   color: var(--text-heading);
 }
 
 /* contacts */
+
+.contacts {
+  padding: 70px 0 70px;
+}
+
+.contacts-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts-box1 {
+  width: 460px;
+}
+
+.contacts-box2 {
+  width: 300px;
+}
+
+.contacts-title {
+  margin-top: 0;
+}
 
 .contacts-text {
   font-family: 'PT Sans', 'Arial', sans-serif;
@@ -536,17 +563,44 @@ a {
   background-color: var(--text-heading);
 }
 
-.page-footer_color {
-  color: var(--menu-footer-lower);
+.page-footer-box {
+  background-color: var(--header-upper);
 }
 
 .page-footer ul {
+  margin: 0;
+  padding-left: 0;
   list-style: none;
+}
+
+.page-footer-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-footer__img {
+  display: block;
+  margin-bottom: 22px;
+}
+
+.page-footer__list {
+  display: flex;
 }
 
 .page-footer__link {
   color: inherit;
 }
+
+.page-footer_color {
+  color: var(--menu-footer-lower);
+}
+
+.page-footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
 
 /* reverse-connection and map */
 
