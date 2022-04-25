@@ -637,11 +637,21 @@ a {
 
 /* page catalog */
 
+.catalog-grid {
+  display: grid;
+  grid-template-areas:
+    "breadcrumbs breadcrumbs"
+    "page-catalog-title page-catalog-title"
+    "filter sorting"
+    "filter cards";
+}
+
 .page-main-catalog {
   font-family: 'PT sans', 'Arial', sans-serif;
 }
 
 .page-catalog-title {
+  grid-area: page-catalog-title;
   font-family: 'Cuprum', 'Arial', sans-serif;
 }
 
@@ -664,6 +674,10 @@ a {
 /* breadcrumbs */
 
 .breadcrumbs {
+  grid-area: breadcrumbs;
+  display: flex;
+  margin-top: 21px;
+  margin-bottom: 20px;
   font-size: 13px;
   line-height: 18px;
   list-style: none;
@@ -674,6 +688,10 @@ a {
 }
 
 /* filter */
+
+.filter {
+  grid-area: filter;
+}
 
 .filter__legend {
   font-weight: bold;
@@ -703,6 +721,10 @@ a {
 }
 
 /* sorting */
+
+.sorting {
+  grid-area: sorting;
+}
 
 .sorting__link {
   color: var(--color-frequently-used);
