@@ -611,7 +611,11 @@ a {
 
 .box-pf__list {
   width: 134px;
-  justify-self: center;
+  justify-self: end;
+}
+
+.box-pf__text {
+  justify-self: end;
 }
 
 /* reverse-connection and map */
