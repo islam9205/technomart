@@ -136,6 +136,12 @@ a {
   margin: 0 auto;
 }
 
+.new {
+  background-image: url(../img/new.png);
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+}
+
 .index-catalog,
 .manufacturers {
   margin-bottom: 70px;
@@ -397,7 +403,7 @@ a {
 
 .promo-block__item-1 {
   grid-area: materials;
-  background: var(--promo-block-materials-delivery) url(../img/new.png) no-repeat 100% 0;
+  background-color: var(--promo-block-materials-delivery);
 }
 
 .promo-block__item-2 {
@@ -563,10 +569,6 @@ a {
   background-color: var(--text-heading);
 }
 
-.page-footer-box {
-  background-color: var(--header-upper);
-}
-
 .page-footer ul {
   margin: 0;
   padding-left: 0;
@@ -595,12 +597,22 @@ a {
   color: var(--menu-footer-lower);
 }
 
-.page-footer-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+.page-footer__box {
+  background-color: var(--header-upper);
 }
 
+.box-pf__box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  font-size: 16px;
+  line-height: 18px;
+  padding-top: 35px;
+}
 
+.box-pf__list {
+  width: 134px;
+  justify-self: center;
+}
 
 /* reverse-connection and map */
 
@@ -691,6 +703,7 @@ a {
 
 .filter {
   grid-area: filter;
+  padding-right: 20px;
 }
 
 .filter__legend {
@@ -739,11 +752,21 @@ a {
   border-bottom: none;
 }
 
-/* description */
+/* about-perforators */
 
-.description-text {
+.about-perforators {
+  background-color: var(--menu-footer-upper);
+  padding: 64px 0 68px;
+}
+
+.about-perforators__title {
+  margin: 0 0 25px;
+}
+
+.about-perforators__text {
   font-size: 13px;
   line-height: 24px;
+  margin-bottom: 0;
 }
 
 /* added-to-cart */
