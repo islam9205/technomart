@@ -378,8 +378,9 @@ a {
   height: 60px;
 }
 
-/* promo-block */
+/* page-index */
 
+/* promo-block */
 
 .promo-block {
   margin-top: 59px;
@@ -558,6 +559,128 @@ a {
   border: 0;
 }
 
+/* page catalog */
+
+.page-catalog {
+  font-family: 'PT sans', 'Arial', sans-serif;
+}
+
+.page-catalog__grid {
+  display: grid;
+  grid-template-areas:
+    "breadcrumbs breadcrumbs"
+    "page-catalog-title page-catalog-title"
+    "filter sorting"
+    "filter cards";
+}
+
+.page-catalog__title {
+  grid-area: page-catalog-title;
+  font-family: 'Cuprum', 'Arial', sans-serif;
+}
+
+.page-catalog__filter,
+.page-catalog__sorting {
+  text-transform: uppercase;
+}
+
+.page-catalog__filter ul,
+.page-catalog__sorting ul {
+  list-style: none;
+}
+
+.subtitle {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* page-catalog__breadcrumbs */
+
+.page-catalog__breadcrumbs {
+  grid-area: breadcrumbs;
+  display: flex;
+  margin-top: 21px;
+  margin-bottom: 20px;
+  font-size: 13px;
+  line-height: 18px;
+  list-style: none;
+}
+
+.breadcrumbs-pc__link {
+  color: var(--color-frequently-used);
+}
+
+/* page-catalog__filter */
+
+.page-catalog__filter {
+  grid-area: filter;
+  padding-right: 20px;
+}
+
+.filter-pc__legend {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.filter-pc__price {
+  background-color: var(--filter-sorting);
+}
+
+.filter-pc__price-input {
+  border: none;
+}
+
+.filter-pc__item {
+  margin-bottom: 20px;
+}
+
+.filter-pc__item-radio {
+  margin-bottom: 22.5px;
+}
+
+.filter-pc__label {
+  font-size: 15px;
+  line-height: 19px;
+}
+
+/* page-catalog__sorting */
+
+.page-catalog__sorting {
+  grid-area: sorting;
+}
+
+.sorting-pc__link {
+  color: var(--color-frequently-used);
+  opacity: 0.3;
+  text-decoration: none;
+  border-bottom: 1px dotted var(--text-in-header);
+}
+
+.sorting-pc__link-active {
+  color: var(--text-in-header);
+  opacity: 1;
+  border-bottom: none;
+}
+
+/* page-catalog__about-perforators */
+
+.page-catalog__about-perforators {
+  background-color: var(--menu-footer-upper);
+  padding: 64px 0 68px;
+}
+
+.about-perforators-pc__title {
+  margin: 0 0 25px;
+}
+
+.about-perforators-pc__text {
+  font-size: 13px;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+
 /* footer */
 
 .page-footer {
@@ -571,7 +694,7 @@ a {
   list-style: none;
 }
 
-.page-footer-flex {
+.page-footer__container {
   display: flex;
   justify-content: space-between;
 }
@@ -645,128 +768,6 @@ a {
 
 .form-rc__button {
   border: none;
-}
-
-/* page catalog */
-
-.catalog-grid {
-  display: grid;
-  grid-template-areas:
-    "breadcrumbs breadcrumbs"
-    "page-catalog-title page-catalog-title"
-    "filter sorting"
-    "filter cards";
-}
-
-.page-main-catalog {
-  font-family: 'PT sans', 'Arial', sans-serif;
-}
-
-.page-catalog-title {
-  grid-area: page-catalog-title;
-  font-family: 'Cuprum', 'Arial', sans-serif;
-}
-
-.filter,
-.sorting {
-  text-transform: uppercase;
-}
-
-.filter ul,
-.sorting ul {
-  list-style: none;
-}
-
-.subtitle {
-  font-weight: normal;
-  font-size: 13px;
-  line-height: 18px;
-}
-
-/* breadcrumbs */
-
-.breadcrumbs {
-  grid-area: breadcrumbs;
-  display: flex;
-  margin-top: 21px;
-  margin-bottom: 20px;
-  font-size: 13px;
-  line-height: 18px;
-  list-style: none;
-}
-
-.breadcrumbs a {
-  color: var(--color-frequently-used);
-}
-
-/* filter */
-
-.filter {
-  grid-area: filter;
-  padding-right: 20px;
-}
-
-.filter__legend {
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 30px;
-}
-
-.filter__price {
-  background-color: var(--filter-sorting);
-}
-
-.filter__price-input {
-  border: none;
-}
-
-.filter__item {
-  margin-bottom: 20px;
-}
-
-.filter__item-radio {
-  margin-bottom: 22.5px;
-}
-
-.filter__label {
-  font-size: 15px;
-  line-height: 19px;
-}
-
-/* sorting */
-
-.sorting {
-  grid-area: sorting;
-}
-
-.sorting__link {
-  color: var(--color-frequently-used);
-  opacity: 0.3;
-  text-decoration: none;
-  border-bottom: 1px dotted var(--text-in-header);
-}
-
-.sorting__link-active {
-  color: var(--text-in-header);
-  opacity: 1;
-  border-bottom: none;
-}
-
-/* about-perforators */
-
-.about-perforators {
-  background-color: var(--menu-footer-upper);
-  padding: 64px 0 68px;
-}
-
-.about-perforators__title {
-  margin: 0 0 25px;
-}
-
-.about-perforators__text {
-  font-size: 13px;
-  line-height: 24px;
-  margin-bottom: 0;
 }
 
 /* added-to-cart */
