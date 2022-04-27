@@ -168,15 +168,12 @@ a {
   background-color: var(--text-in-header);
 }
 
-.index-catalog-list,
 .catalog-list {
   margin: 0;
   padding-left: 0;
   font-family: 'PT Sans', 'Arial', sans-serif;
   list-style: none;
-}
 
-.catalog-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -256,7 +253,7 @@ a {
   background-color: var(--header-upper);
 }
 
-.upper-mh {
+.upper-mh__box {
   display: flex;
 }
 
@@ -314,7 +311,7 @@ a {
   background-color: var(--checkout-buy);
 }
 
-.lower-mh {
+.lower-mh__box {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding-top: 41px;
@@ -457,17 +454,16 @@ a {
 
 } */
 
-/* index-catalog-list */
+/* index-catalog */
 
-.index-catalog-list {
-  display: grid;
+.index-catalog__list {
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 20px;
+  grid-template-rows: auto;
 }
 
 /* manufacturers */
 
-.manufacturers-list {
+.manufacturers__list {
   margin: 0;
   padding-left: 0;
   list-style: none;
@@ -477,14 +473,14 @@ a {
   gap: 20px;
 }
 
-.manufacturers-item {
+.manufacturers__item {
   width: 220px;
   height: 145px;
   border: 1px solid var(--border-cards);
   box-sizing: border-box;
 }
 
-.manufacturers-link {
+.manufacturers__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -517,16 +513,16 @@ a {
   padding: 70px 0 70px;
 }
 
-.contacts-flex {
+.contacts__box {
   display: flex;
   justify-content: space-between;
 }
 
-.contacts-box1 {
+.contacts__box1 {
   width: 460px;
 }
 
-.contacts-box2 {
+.contacts__box2 {
   width: 300px;
 }
 
@@ -534,21 +530,21 @@ a {
   margin-top: 0;
 }
 
-.contacts-text {
+.contacts__text {
   font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
 }
 
-.contacts-list {
+.contacts__list {
   list-style: none;
 }
 
-.contacts-list li {
+.contacts__item {
   position: relative;
   margin-bottom: 12px;
 }
 
-.contacts-list li::before {
+.contacts__item::before {
   content: '';
   width: 25px;
   height: 2px;
@@ -558,7 +554,7 @@ a {
   left: -37px;
 }
 
-.contacts-button {
+.contacts__button {
   border: 0;
 }
 
