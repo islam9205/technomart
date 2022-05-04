@@ -108,7 +108,7 @@ a {
   padding: 0;
   min-height: 100%;
   display: grid;
-  grid-template-rows: min-content 1fr min-content;
+  grid-template-rows: min-content min-content 1fr min-content;
   align-content: start;
   font-family: 'Cuprum', 'Arial', sans-serif;
   font-size: 18px;
