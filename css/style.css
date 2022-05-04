@@ -116,6 +116,11 @@ a {
   align-content: start;
 }
 
+.page-body p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .visuallyhidden {
   position: absolute;
 
