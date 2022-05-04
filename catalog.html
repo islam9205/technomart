@@ -16,9 +16,9 @@
 
     <header class="main-header">
       <nav>
-        <section class="main-header__upper">
+        <section class="main-header__upper upper-mh">
           <h2 class="visuallyhidden">Выбранные товары</h2>
-          <div class="container upper-mh">
+          <div class="container upper-mh__box">
             <a class="upper-mh__link-logo">
               <img src="img/logo.png" width="220" height="47" alt="Логотип сайта">
             </a>
@@ -30,9 +30,9 @@
             <a class="upper-mh__link upper-mh__link_colors" href="blank.html">Оформить заказ</a>
           </div>
         </section>
-        <section class="main-header__lower">
+        <section class="main-header__lower lower-mh">
           <h2 class="visuallyhidden">Контакты и регистрация</h2>
-          <div class="container lower-mh">
+          <div class="container lower-mh__box">
             <p class="lower-mh__text">
               Интернет-магазин<br>
               строительных материалов<br>
@@ -73,73 +73,73 @@
       </nav>
     </header>
 
-    <main class="page-main-catalog">
-      <div class="container catalog-grid">
-        <ul class="breadcrumbs">
-          <li>Картинка домика</li>
-          <li><a href="#">Каталог</a></li>
-          <li><a href="#">Инструмент</a></li>
+    <main class="page-catalog">
+      <div class="container page-catalog__grid">
+        <ul class="page-catalog__breadcrumbs breadcrumbs-pc">
+          <li><a class="breadcrumbs-pc__link" href="#">Картинка домика</a></li>
+          <li><a class="breadcrumbs-pc__link" href="#">Каталог</a></li>
+          <li><a class="breadcrumbs-pc__link" href="#">Инструмент</a></li>
           <li>Перфораторы</li>
         </ul>
-        <h1 class="title page-catalog-title">Перфораторы</h1>
-        <section class="filter">
+        <h1 class="title page-catalog__title">Перфораторы</h1>
+        <section class="page-catalog__filter filter-pc">
           <h2 class="subtitle">Фильтр:</h2>
           <form action="https://echo.htmlacademy.ru" method="post">
             <fieldset>
-              <legend class="filter__legend">Цена:</legend>
-              <input class="filter__price" type="range" name="Цена" min="0" max="30000" step="1">
+              <legend class="filter-pc__legend">Цена:</legend>
+              <input class="filter-pc__price" type="range" name="Цена" min="0" max="30000" step="1">
               <p>
-                <input class="filter__price filter__price-input" type="number" name="от" value="0" min="0" max="30000">
-                <input class="filter__price filter__price-input" type="number" name="до" value="30000" min="0" max="30000">
+                <input class="filter-pc__price filter-pc__price-input" type="number" name="от" value="0" min="0" max="30000">
+                <input class="filter-pc__price filter-pc__price-input" type="number" name="до" value="30000" min="0" max="30000">
               </p>
             </fieldset>
             <fieldset>
-              <legend class="filter__legend">Производители:</legend>
+              <legend class="filter-pc__legend">Производители:</legend>
               <ul>
-                <li class="filter__item">
+                <li class="filter-pc__item">
                   <input type="checkbox" id="bosch" name="Bosch" checked>
-                  <label class="filter__label" for="bosch">Bosch</label>
+                  <label class="filter-pc__label" for="bosch">Bosch</label>
                 </li>
-                <li class="filter__item">
+                <li class="filter-pc__item">
                   <input type="checkbox" id="interskol" name="Interskol">
-                  <label class="filter__label" for="interskol">Interskol</label>
+                  <label class="filter-pc__label" for="interskol">Interskol</label>
                 </li>
-                <li class="filter__item">
+                <li class="filter-pc__item">
                   <input type="checkbox" id="makita" name="Makita" checked>
-                  <label class="filter__label" for="makita">Makita</label>
+                  <label class="filter-pc__label" for="makita">Makita</label>
                 </li>
-                <li class="filter__item">
+                <li class="filter-pc__item">
                   <input type="checkbox" id="dewalt" name="Dewalt">
-                  <label class="filter__label" for="dewalt">Dewalt</label>
+                  <label class="filter-pc__label" for="dewalt">Dewalt</label>
                 </li>
-                <li class="filter__item">
+                <li class="filter-pc__item">
                   <input type="checkbox" id="hitachi" name="Hitachi">
-                  <label class="filter__label" for="hitachi">Hitachi</label>
+                  <label class="filter-pc__label" for="hitachi">Hitachi</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset>
-              <legend class="filter__legend">Питание:</legend>
+              <legend class="filter-pc__legend">Питание:</legend>
               <ul>
-                <li class="filter__item filter__item-radio">
+                <li class="filter-pc__item filter-pc__item-radio">
                   <input type="radio" id="rechargeable" name="Питание" value="Аккумуляторные" checked>
                   <label class="filter__label" for="rechargeable">Аккумуляторные</label>
                 </li>
-                <li class="filter__item">
+                <li class="filter-pc__item">
                   <input type="radio" id="network" name="Питание" value="Сетевые">
-                  <label class="filter__label" for="network">Сетевые</label>
+                  <label class="filter-pc__label" for="network">Сетевые</label>
                 </li>
               </ul>
             </fieldset>
             <button type="submit">Показать</button>
           </form>
         </section>
-        <section class="sorting">
+        <section class="page-catalog__sorting sorting-pc">
           <h2 class="subtitle">Сортировка:</h2>
-          <ul class="">
-            <li><a class="sorting__link sorting__link-active" href="#">По цене</a></li>
-            <li><a class="sorting__link" href="#">По типу</a></li>
-            <li><a class="sorting__link" href="#">По функционалу</a></li>
+          <ul>
+            <li><a class="sorting-pc__link sorting-pc__link-active" href="#">По цене</a></li>
+            <li><a class="sorting-pc__link" href="#">По типу</a></li>
+            <li><a class="sorting-pc__link" href="#">По функционалу</a></li>
             <li><a href="#"><img src="./img/arrow-up.svg" alt="По убыванию"></a></li>
             <li><a href="#"><img src="./img/arrow-to-down.svg" alt="По возрастанию"></a></li>
           </ul>
@@ -307,10 +307,10 @@
           </ul>
         </section>
       </div>
-      <section class="about-perforators">
+      <section class="page-catalog__about-perforators">
         <div class="container">
-          <h2 class="title page-catalog-title about-perforators__title">Пара слов о перфораторах</h2>
-          <p class="about-perforators__text">
+          <h2 class="title page-catalog__title about-perforators-pc__title">Пара слов о перфораторах</h2>
+          <p class="about-perforators-pc__text">
             Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
             Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.<br>
             В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
@@ -322,7 +322,7 @@
     <footer class="page-footer">
       <section>
         <h2 class="visuallyhidden">Меню в падвале</h2>
-        <div class="container page-footer-flex">
+        <div class="container page-footer__container">
           <div>
             <img class="page-footer__img" src="img/logo.png" width="220" height="47" alt="Логотип сайта">
             <p>
