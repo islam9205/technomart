@@ -701,13 +701,18 @@ a {
 }
 
 .page-footer__container {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 20px;
 }
 
 .page-footer__img {
   display: block;
   margin-bottom: 22px;
+}
+
+.page-footer__text {
+  min-width: 333px;
 }
 
 .page-footer__list {
@@ -727,22 +732,24 @@ a {
 }
 
 .box-pf__box {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-top: 35px;
   font-size: 16px;
   line-height: 18px;
-  padding-top: 35px;
+
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr 1fr;
+  gap: 20px;
 }
 
 .box-pf__list {
-  width: 134px;
-  justify-self: end;
+  justify-self: center;
+  /* width: 134px; */
 }
-
+/*
 .box-pf__text {
   justify-self: end;
 }
-
+ */
 /* reverse-connection and map */
 
 .reverse-connection,
