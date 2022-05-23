@@ -91,6 +91,7 @@
   --border-form: #c5c5c5;
   --border-cards: #eaeaea;
   --border-card-pages: #e5e5e5;
+  --border-fieldset: rgba(0, 0, 0, 0.0001);
 
   /* gradient colors */
   --social-network: #212a3a;
@@ -628,6 +629,14 @@ a {
 
 .page-catalog__filter {
   grid-area: filter;
+}
+
+.filter-pc__fieldset {
+  margin: 0;
+  margin-bottom: 17px;
+  padding: 0;
+  border: none;
+  border-bottom: 1px solid var(--border-fieldset);
 }
 
 .filter-pc__legend {
