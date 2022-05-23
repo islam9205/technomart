@@ -635,6 +635,7 @@ a {
   margin: 0;
   margin-bottom: 17px;
   padding: 0;
+  padding-bottom: 26px;
   border: none;
   border-bottom: 1px solid var(--border-fieldset);
 }
@@ -643,6 +644,11 @@ a {
   font-weight: bold;
   font-size: 17px;
   line-height: 30px;
+}
+
+.filter-pc__text,
+.filter-pc__list {
+  margin-bottom: 0;
 }
 
 .filter-pc__price {

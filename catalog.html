@@ -88,14 +88,14 @@
             <fieldset class="filter-pc__fieldset">
               <legend class="filter-pc__legend">Цена:</legend>
               <input class="filter-pc__price" type="range" name="Цена" min="0" max="30000" step="1">
-              <p>
+              <p class="filter-pc__text">
                 <input class="filter-pc__price filter-pc__price-input" type="number" name="от" value="0" min="0" max="30000">
                 <input class="filter-pc__price filter-pc__price-input" type="number" name="до" value="30000" min="0" max="30000">
               </p>
             </fieldset>
             <fieldset class="filter-pc__fieldset">
               <legend class="filter-pc__legend">Производители:</legend>
-              <ul>
+              <ul class="filter-pc__list">
                 <li class="filter-pc__item">
                   <input type="checkbox" id="bosch" name="Bosch" checked>
                   <label class="filter-pc__label" for="bosch">Bosch</label>
@@ -120,7 +120,7 @@
             </fieldset>
             <fieldset class="filter-pc__fieldset">
               <legend class="filter-pc__legend">Питание:</legend>
-              <ul>
+              <ul class="filter-pc__list">
                 <li class="filter-pc__item filter-pc__item-radio">
                   <input type="radio" id="rechargeable" name="Питание" value="Аккумуляторные" checked>
                   <label class="filter__label" for="rechargeable">Аккумуляторные</label>
