@@ -644,10 +644,12 @@ a {
   font-weight: bold;
   font-size: 17px;
   line-height: 30px;
+  margin-bottom: 17px;
 }
 
 .filter-pc__text,
-.filter-pc__list {
+.filter-pc__list,
+.filter-pc__item:last-child {
   margin-bottom: 0;
 }
 
@@ -657,6 +659,11 @@ a {
 
 .filter-pc__price-input {
   border: none;
+}
+
+.filter-pc__list {
+  margin-top: 0;
+  padding-left: 0;
 }
 
 .filter-pc__item {
