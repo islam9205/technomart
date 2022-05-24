@@ -87,7 +87,9 @@
           <form action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="filter-pc__fieldset">
               <legend class="filter-pc__legend">Цена:</legend>
-              <input class="filter-pc__price" type="range" name="Цена" min="0" max="30000" step="1">
+              <div class="filter-pc__box">
+                <input class="filter-pc__range" type="range" name="Цена" min="0" max="30000" step="1">
+              </div>
               <p class="filter-pc__text">
                 <input class="filter-pc__price filter-pc__price-input" type="number" name="от" value="0" min="0" max="30000">
                 <input class="filter-pc__price filter-pc__price-input" type="number" name="до" value="30000" min="0" max="30000">
@@ -131,7 +133,7 @@
                 </li>
               </ul>
             </fieldset>
-            <button type="submit">Показать</button>
+            <button class="filter-pc__button" type="button">Показать</button>
           </form>
         </section>
         <section class="page-catalog__sorting sorting-pc">

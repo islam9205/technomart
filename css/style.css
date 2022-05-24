@@ -640,6 +640,11 @@ a {
   border-bottom: 1px solid var(--border-fieldset);
 }
 
+.filter-pc__fieldset:last-of-type {
+  margin-bottom: 8px;
+  border: none;
+}
+
 .filter-pc__legend {
   font-weight: bold;
   font-size: 17px;
@@ -647,14 +652,28 @@ a {
   margin-bottom: 17px;
 }
 
+.filter-pc__box,
+.filter-pc__price {
+  background-color: var(--filter-sorting);
+}
+
+.filter-pc__box {
+  padding: 39px 20px;
+}
+
+.filter-pc__range {
+  width: 100%;
+}
+
+.filter-pc__price {
+  min-width: 95px;
+  min-height: 38px;
+}
+
 .filter-pc__text,
 .filter-pc__list,
 .filter-pc__item:last-child {
   margin-bottom: 0;
-}
-
-.filter-pc__price {
-  background-color: var(--filter-sorting);
 }
 
 .filter-pc__price-input {
@@ -677,6 +696,15 @@ a {
 .filter-pc__label {
   font-size: 15px;
   line-height: 19px;
+}
+
+.filter-pc__button {
+  border: 1px solid var(--border-card-pages);
+  padding: 10px 0;
+  width: 100%;
+  font-size: 13px;
+  line-height: 18px;
+  background-color: var(--text-main);
 }
 
 /* page-catalog__sorting */
