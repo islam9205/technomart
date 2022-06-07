@@ -377,17 +377,19 @@ a {
   background-color: var(--text-heading);
   color: var(--text-main);
 
-  /* display: flex; */
-}
-/*
-.site-navigation-mh__link {
   display: flex;
+}
+
+.site-navigation-mh__link {
+  display: block;
+  margin: 16px 24px 20px 27px;
+  /*display: flex;
   justify-content: center;
   align-items: center;
   width: 112px;
-  height: 60px;
+  height: 60px;*/
 }
- */
+
 /* page-index */
 
 /* promo-block */
