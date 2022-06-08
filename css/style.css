@@ -390,6 +390,14 @@ a {
   height: 60px;*/
 }
 
+.site-navigation-mh__item:first-child .site-navigation-mh__link {
+  margin-left: 53px;
+}
+
+.site-navigation-mh__item:last-child .site-navigation-mh__link {
+  margin-right: 53px;
+}
+
 /* page-index */
 
 /* promo-block */
