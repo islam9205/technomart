@@ -383,47 +383,24 @@ a {
 }
 
 .site-navigation-mh__item {
-  margin-right: auto;
+  margin-right: 12.5px;
 }
 
 .site-navigation-mh__link,
 .site-navigation-mh__link_active {
   display: block;
   padding: 16px 25.5px 20px;
-
-  /*display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 112px;
-  height: 60px;*/
 }
 
 .site-navigation-mh__link:hover {
   background-color: var(--header-upper);
 }
-/*
-.site-navigation-mh__item_active:hover {
-  background-color: none;
-}
- */
+
 .site-navigation-mh__link:active {
   background-color: var(--header-upper);
   opacity: 0.5;
 }
-/*
-.site-navigation-mh__item_active:active {
-  background-color: none;
-  opacity: 1;
-} */
-/*
-.site-navigation-mh__item:first-child .site-navigation-mh__link {
-  padding-left: 53px;
-}
 
-.site-navigation-mh__item:last-child .site-navigation-mh__link {
-  padding-right: 53px;
-}
- */
 /* page-index */
 
 /* promo-block */
