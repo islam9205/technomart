@@ -272,6 +272,18 @@ a {
 
 .upper-mh__form {
   height: 42px;
+  position: relative;
+}
+
+.upper-mh__shape-icon {
+  opacity: 0.3;
+  position: absolute;
+  top: 12px;
+  left: 17px;
+}
+
+.upper-mh__form:hover .upper-mh__shape-icon {
+  opacity: 1;
 }
 
 .upper-mh__input {
@@ -280,21 +292,23 @@ a {
   padding-left: 42px;
   border: none;
   background-color: var(--header-upper);
-  /* background: var(--header-upper) url(../img/shape.svg) no-repeat 17px 50%; */
-  /* filter: url(../img/shape.svg); */
-  /* mask-image: url('../img/shape.svg'); */
 }
 
 .upper-mh__input:focus {
   background-color: var(--text-main);
 }
 
+.upper-mh__shape-icon + .upper-mh__input:focus {
+  fill: var(--text-in-header);
+}
+
+/*
 .upper-mh__input::before {
   content: "";
   width: 20px;
   background-image: url(../img/shape.svg);
 }
-
+ */
 .upper-mh__input::placeholder {
   color: var(--text-main);
 }
