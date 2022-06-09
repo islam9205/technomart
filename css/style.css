@@ -316,6 +316,7 @@ a {
   display: block;
   white-space: nowrap;
   padding: 9px 24px 9px 43px;
+  position: relative;
 }
 
 .upper-mh__link-icon::before {
@@ -323,10 +324,25 @@ a {
   width: 16px;
   height: 16px;
   position: absolute;
+  opacity: 0.3;
 }
 
 .upper-mh__link-icon-1::before {
-  
+  background-image: url(../img/header/icon-bookmark.svg);
+  top: 13px;
+  left: 20px;
+}
+
+.upper-mh__link-icon-1:hover::before {
+  opacity: 1;
+}
+
+.upper-mh__link-icon-1:active {
+  background-color: var(--cry-header-upper);
+}
+
+.upper-mh__link-icon-1:active::before {
+  opacity: 0.3;
 }
 
 .upper-mh__link-order {
