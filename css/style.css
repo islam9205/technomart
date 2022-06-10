@@ -310,13 +310,6 @@ a {
   /* opacity: 1; */
 }
 
-/*
-.upper-mh__input::before {
-  content: "";
-  width: 20px;
-  background-image: url(../img/shape.svg);
-}
- */
 .upper-mh__input::placeholder {
   color: var(--text-main);
 }
@@ -423,10 +416,15 @@ a {
 }
 
 .lower-mh__text-tel {
+  margin-top: 4px;
+  border: 3px solid var(--text-main);
+  padding: 7px 50px 8px 74px;
+  /* box-sizing: border-box; */
+  width: 270px;
+  height: 45px;
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
-  border: 3px solid var(--text-main);
   background-color: var(--text-footer);
 }
 
