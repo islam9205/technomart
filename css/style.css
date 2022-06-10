@@ -276,14 +276,20 @@ a {
 }
 
 .upper-mh__shape-icon {
-  opacity: 0.3;
+  /* opacity: 0.3; */
   position: absolute;
   top: 12px;
   left: 17px;
 }
 
-.upper-mh__form:hover .upper-mh__shape-icon {
-  opacity: 1;
+.upper-mh__shape-icon path {
+  fill: #4d4d4d;
+}
+
+/* .upper-mh__form:hover .upper-mh__shape-icon */
+.upper-mh__form:hover .upper-mh__shape-icon path {
+  /* opacity: 1; */
+  fill: #fff;
 }
 
 .upper-mh__input {
@@ -291,6 +297,7 @@ a {
   height: 42px;
   padding-left: 42px;
   border: none;
+  color: var(--text-main);
   background-color: var(--header-upper);
 }
 
@@ -298,8 +305,9 @@ a {
   background-color: var(--text-main);
 }
 
-.upper-mh__shape-icon + .upper-mh__input:focus {
+.upper-mh__input:focus + .upper-mh__shape-icon path {
   fill: var(--text-in-header);
+  /* opacity: 1; */
 }
 
 /*
@@ -314,6 +322,7 @@ a {
 }
 
 .upper-mh__input:focus {
+  color: var(--color-frequently-used);
   outline: none;
 }
 
