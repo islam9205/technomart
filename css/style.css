@@ -425,12 +425,16 @@ a {
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
-  background-color: var(--text-footer);
+  background: var(--text-footer) url(../img/icon-phone.svg) no-repeat 15% 50%;
 }
 
 .lower-mh__text-address {
   font-size: 14px;
   color: var(--text-heading);
+}
+
+.lower-mh__none {
+  display: none;
 }
 
 .lower-mh__authorization,
