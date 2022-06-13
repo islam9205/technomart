@@ -363,7 +363,7 @@ a {
 }
 
 .upper-mh__link-icon-2::before {
-  background-image: url(../img/header/icon-cart-1.svg);
+  background-image: url(../img/header/icon-cart.svg);
   top: 13px;
   left: 20px;
 }
@@ -402,6 +402,10 @@ a {
   padding-bottom: 40px;
 }
 
+.lower-mh__box-section {
+  padding-top: 4px;
+}
+
 .lower-mh__text,
 .lower-mh__text-tel {
   color: var(--text-in-header);
@@ -416,7 +420,7 @@ a {
 }
 
 .lower-mh__text-tel {
-  margin-top: 4px;
+  /* margin-top: 4px; */
   border: 3px solid var(--text-main);
   padding: 7px 50px 8px 74px;
   /* box-sizing: border-box; */
@@ -443,8 +447,37 @@ a {
 }
 
 .lower-mh__authorization {
+  margin-right: 10px;
+  padding: 12px 24px;
   font-size: 21px;
   line-height: 21px;
+  background-color: var(--text-main);
+}
+
+.lower-mh__authorization:hover {
+  color: var(--text-in-header);
+}
+
+.lower-mh__authorization:active {
+  color: var(--border-form);
+}
+
+.lower-mh__to-come-in {
+  padding-left: 45px;
+  position: relative;
+}
+
+.to-come-in__img {
+  position: absolute;
+  left: 20px;
+}
+
+.lower-mh__to-come-in:hover .to-come-in__img path {
+  fill: var(--guidance-login);
+}
+
+.lower-mh__to-come-in:active .to-come-in__img path {
+  fill: var(--border-form);
 }
 
 .lower-mh__authorization-item {
