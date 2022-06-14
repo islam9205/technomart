@@ -41,12 +41,12 @@
               строительных материалов<br>
               и инструментов для ремонта
             </p>
-            <section>
+            <section class="lower-mh__box-section">
               <h3 class="visuallyhidden">Телефон и адрес</h3>
               <a class="lower-mh__text-tel">+7 800 555-86-28</a>
               <p class="lower-mh__text-address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
             </section>
-            <section>
+            <section class="lower-mh__box-section">
               <h3 class="visuallyhidden">Блок авторизации</h3>
               <section>
                 <h4 class="visuallyhidden">Не авторизованная страница</h4>
@@ -61,10 +61,19 @@
               </section>
               <section class="lower-mh__none">
                 <h4 class="visuallyhidden">Авторизованная страница</h4>
-                <a class="lower-mh__authorization" href="blank.html">Cсылка деавторизации</a>
-                <ul>
-                  <li class="lower-mh__item"><a class="lower-mh__authorization-item" href="#">Мои заказы</a></li>
-                  <li><a class="lower-mh__authorization-item" href="#">Личный кабинет</a></li>
+                <a class="lower-mh__authorization lower-mh__authorized" href="blank.html">
+                  <svg class="authorized__img-user" width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.88 14.67c-2.14-.74-4.25-1.67-5.2-2.4-.66-.5-.78-1.61-.52-2.4a5.49 5.49 0 0 0 1.86-4.29c0-2.8-1.8-5.08-4.02-5.08-2.22 0-4.02 2.28-4.02 5.08 0 1.8.75 3.38 1.86 4.28.26.8.14 1.92-.51 2.42-.95.72-3.07 1.65-5.21 2.39C-.03 15.4 0 18.5 0 18.5h20s.02-3.1-2.12-3.83Z" fill="#C5C5C5"/>
+                  </svg>
+                  Cсылка деавторизации
+                  <svg class="authorized__img-exit" width="20" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 9 11.12.5v6h-6v5h6v6L20 9Z" fill="#C5C5C5"/>
+                    <path d="M2.1 14.45V3.55c.02-.38.18-1.06 1.02-1.06h5.02V.5H3.12C.94.5.12 2.31.09 3.53v10.94C.1 15.7.94 17.5 3.12 17.5h5.02v-1.99H3.12c-.84 0-1-.68-1.01-1.06Z" fill="#C5C5C5"/>
+                  </svg>
+                </a>
+                <ul class="lower-mh__list">
+                  <li class="lower-mh__item"><a class="lower-mh__authorization-item" href="blank.html">Мои заказы</a></li>
+                  <li><a class="lower-mh__authorization-item" href="blank.html">Личный кабинет</a></li>
                 </ul>
               </section>
             </section>
