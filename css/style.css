@@ -491,6 +491,7 @@ a {
 }
 
 .lower-mh__authorized {
+  margin-bottom: 7px;
   margin-left: 0;
   padding-left: 56px;
   padding-right: 56px;
@@ -530,7 +531,8 @@ a {
 .lower-mh__list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 7px;
+  margin-top: 0;
+  padding-left: 50px;
 }
 
 .lower-mh__item {
