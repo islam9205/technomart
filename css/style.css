@@ -215,6 +215,8 @@ a {
 }
 
 .catalog-item {
+  display: flex;
+  justify-content: center;
   border: 1px solid var(--border-cards);
 }
 
