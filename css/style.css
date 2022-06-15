@@ -170,10 +170,22 @@ a {
 
 .container-tb {
   margin-bottom: 20px;
+  padding-left: 28px;
+  padding-right: 14px;
   min-height: 89px;
   display: flex;
   justify-content: space-between;
   background-color: var(--header-goods);
+}
+
+.container-tb .title {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.container-tb .button {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .title {
@@ -628,7 +640,7 @@ a {
 
 .promo-block__item {
   padding-left: 22px;
-  min-width: 300px;
+  min-width: 278px;
   min-height: 123px;
   background-repeat: no-repeat;
   background-position: 85% 50%;
@@ -639,19 +651,7 @@ a {
   background-color: var(--promo-block-materials-delivery);
   background-image: url(../img/background_img/a-tin-of-paint.png);
 }
-/*
-.promo-block__item-1 {
-  grid-area: materials;
-  background-color: var(--promo-block-materials-delivery);
-  background-image:
-    url(../img/background_img/a-tin-of-paint.png),
-    url(../img/new.png);
-  background-repeat: no-repeat;
-  background-position:
-    85% 50%,
-    100% 0;
-}
- */
+
 .promo-block__item-2 {
   grid-area: tool;
   background-color: var(--promo-block-tool);
@@ -661,20 +661,25 @@ a {
 .promo-block__item-3 {
   grid-area: technics;
   background-color: var(--promo-block-technics);
+  background-image: url(../img/background_img/tractor.png);
 }
 
 .promo-block__item-4 {
   grid-area: discounts;
   background-color: var(--promo-block-discount);
+  background-image: url(../img/background_img/cart.png);
 }
 
 .promo-block__item-5 {
   grid-area: delivery;
   background-color: var(--promo-block-materials-delivery);
+  background-image: url(../img/background_img/van.png);
 }
 
 .promo-block__item-6 {
   grid-area: slider;
+  width: 620px;
+  height: 266px;
 }
 
 .promo-block__title {
