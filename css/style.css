@@ -442,6 +442,7 @@ a {
 }
 
 .lower-mh__text-address {
+  margin-bottom: 0;
   font-size: 14px;
   color: var(--text-heading);
 }
@@ -607,9 +608,21 @@ a {
   gap: 20px;
 }
 
+.promo-block__item {
+  min-width: 300px;
+  min-height: 123px;
+}
+
 .promo-block__item-1 {
   grid-area: materials;
   background-color: var(--promo-block-materials-delivery);
+  background-image:
+    url(../img/background_img/a-tin-of-paint.png),
+    url(../img/new.png);
+  background-repeat: no-repeat;
+  background-position:
+    85% 50%,
+    100% 0;
 }
 
 .promo-block__item-2 {
