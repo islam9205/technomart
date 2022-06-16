@@ -271,13 +271,26 @@ a {
 }
 
 .catalog-box {
-  display: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  /* display: none; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 170px;
+  background-color: var(--text-main);
   position: absolute;
   top: 0;
 }
 
 .catalog-item:hover .catalog-box {
   display: block;
+}
+
+.catalog-box button {
+  border-radius: 2px;
+  margin-bottom: 10px;
 }
 
 .catalog-button-buy,
@@ -290,17 +303,18 @@ a {
 }
 
 .catalog-button-buy {
+  padding: 10px 40px 10px 53px;
   color: var(--text-main);
   background: var(--checkout-buy);
   box-shadow: inset 0px -3px 0px var(--peace-buy);
-  border-radius: 2px;
+  border: none;
 }
 
 .catalog-button-bookmarks {
+  padding: 11px 34px 9px 33px;
   background: var(--text-main);
   border: 3px solid #63A63E;
   /* box-sizing: border-box; */
-  border-radius: 2px;
 }
 
 /* main-header */
