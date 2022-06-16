@@ -273,11 +273,9 @@ a {
 .catalog-box {
   margin-top: 0;
   margin-bottom: 0;
-  /* display: none; */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: none;
+
+  width: 100%;
   height: 170px;
   background-color: var(--text-main);
   position: absolute;
@@ -285,7 +283,10 @@ a {
 }
 
 .catalog-item:hover .catalog-box {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .catalog-box button {
