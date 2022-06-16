@@ -91,6 +91,7 @@
   /* border colors */
   --border-form: #c5c5c5;
   --border-cards: #eaeaea;
+  --border-cards-hover:rgba(0, 0, 0, 0.15);
   --border-card-pages: #e5e5e5;
   --border-fieldset: rgba(0, 0, 0, 0.0001);
 
@@ -215,22 +216,35 @@ a {
 }
 
 .catalog-item {
-  display: flex;
-  justify-content: center;
   border: 1px solid var(--border-cards);
   position: relative;
 }
 
+.catalog-item:hover {
+  box-shadow: 0px 4px 20px var(--border-cards-hover);
+}
+
+.catalog-item a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .catalog-title {
-  line-height: 20px;
-  color: var(--color-frequently-used);
   margin-top: 0;
   margin-bottom: 6.86px;
+  font-size: inherit;
+  line-height: 20px;
+  text-align: center;
+  color: var(--color-frequently-used);
 }
 
 .catalog-pic {
-  background-color: rgba(0, 0, 0, 0.0001);
-  margin-top: 6px;
+  order: -1;
+  display: flex;
+  align-items: center;
+  height: 170px;
+  background-color: var(--border-fieldset);
   margin-bottom: 8px;
 }
 
@@ -259,6 +273,7 @@ a {
 .catalog-box {
   display: none;
   position: absolute;
+  top: 0;
 }
 
 .catalog-item:hover .catalog-box {
