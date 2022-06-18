@@ -921,6 +921,7 @@ a {
 .contacts__button {
   margin-top: auto;
   border: 0;
+  cursor: pointer;
 }
 
 /* page catalog */
