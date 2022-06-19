@@ -367,8 +367,22 @@ a {
 
 .upper-mh__form {
   flex-grow: 1;
+  display: flex;
   height: 42px;
   position: relative;
+}
+
+/* .upper-mh__input-block {
+  display: flex;
+} */
+
+.upper-mh__input {
+  flex-grow: 1;
+  height: 42px;
+  padding-left: 42px;
+  border: none;
+  color: var(--text-main);
+  background-color: var(--header-upper);
 }
 
 .upper-mh__shape-icon {
@@ -376,6 +390,7 @@ a {
   position: absolute;
   top: 12px;
   left: 17px;
+  z-index: 10;
 }
 
 .upper-mh__shape-icon path {
@@ -386,19 +401,6 @@ a {
 .upper-mh__form:hover .upper-mh__shape-icon path {
   /* opacity: 1; */
   fill: #fff;
-}
-
-.upper-mh__input-block {
-  display: flex;
-}
-
-.upper-mh__input {
-  flex-grow: 1;
-  height: 42px;
-  padding-left: 42px;
-  border: none;
-  color: var(--text-main);
-  background-color: var(--header-upper);
 }
 
 .upper-mh__input:focus {
