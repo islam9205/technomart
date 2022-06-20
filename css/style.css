@@ -971,9 +971,17 @@ a {
   display: flex;
   margin-top: 21px;
   margin-bottom: 20px;
+  padding-left: 14px;
   font-size: 13px;
   line-height: 18px;
   list-style: none;
+  background: url(../img/icon-home.png) no-repeat 0 50%;
+}
+
+.breadcrumbs-pc__item {
+  margin-left: 17.86px;
+  padding-left: 15.61px;
+  background: url(../img/icon-right-small.png) no-repeat 0 50%;
 }
 
 .breadcrumbs-pc__link {
