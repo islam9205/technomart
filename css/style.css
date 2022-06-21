@@ -73,6 +73,9 @@
   --header-goods: #f9f5f0;
   --filter-sorting: #f7f3ec;
   --added-to-cart: #f1f1f1;
+  --promo-block: rgba(255, 255, 255, 0.3);
+  --promo-block-hover: rgba(197, 197, 197, 0.3);
+  --promo-block-active: rgba(169, 169, 169, 0.3);
 
   /* background color on action */
   --cry-logo-open-catalog: #ba2732;
@@ -776,8 +779,17 @@ a {
 } */
 
 .promo-block_link-bc {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: var(--promo-block);
 }
+
+.promo-block_link-bc:hover {
+  background-color: var(--promo-block-hover);
+}
+
+.promo-block_link-bc:active {
+  background-color: var(--promo-block-active);
+}
+
 /*
 .slider-pb__link {
   background-color: var(--text-in-header)
