@@ -207,6 +207,12 @@ a {
   background-color: var(--text-in-header);
 }
 
+.button-width {
+  min-width: 192px;
+  display: inline-block;
+  text-align: center;
+}
+
 .catalog-list {
   margin: 0;
   padding-left: 0;
@@ -779,6 +785,11 @@ a {
 } */
 
 .promo-block_link-bc {
+  padding-left: 0;
+  padding-right: 0;
+  min-width: 135px;
+  display: inline-block;
+  text-align: center;
   background-color: var(--promo-block);
 }
 
