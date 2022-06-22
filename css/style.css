@@ -118,12 +118,11 @@
   grid-template-rows: min-content min-content 1fr min-content;
   align-content: start;
 }
-/*
+
 .page-body p {
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
 }
- */
+
 a {
   text-decoration: none;
 }
@@ -1127,6 +1126,14 @@ a {
   font-size: 13px;
   line-height: 24px;
   margin-bottom: 0;
+}
+
+/* page block */
+
+.page-block-title {
+  margin-top: 50px;
+  margin-bottom: 150px;
+  text-align: center;
 }
 
 /* footer */
