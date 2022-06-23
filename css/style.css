@@ -77,6 +77,7 @@
   --promo-block-hover: rgba(197, 197, 197, 0.3);
   --promo-block-active: rgba(169, 169, 169, 0.3);
   --toggle: #ababab;
+  --separator: #444;
 
   /* background color on action */
   --cry-logo-open-catalog: #ba2732;
@@ -1088,6 +1089,26 @@ a {
 
 .range-filter__toggle-max {
   right: 35px;
+}
+
+.range-filter__price-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.range-filter__price-controls input {
+  padding: 10px 0;
+  width: 95px;
+  text-align: center;
+  border: none;
+  background-color: var(--filter-sorting);
+}
+
+.range-filter__separator {
+  width: 10px;
+  height: 1px;
+  background-color: var(--separator);
 }
 
 /*
