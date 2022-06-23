@@ -76,6 +76,7 @@
   --promo-block: rgba(255, 255, 255, 0.3);
   --promo-block-hover: rgba(197, 197, 197, 0.3);
   --promo-block-active: rgba(169, 169, 169, 0.3);
+  --toggle: #ababab;
 
   /* background color on action */
   --cry-logo-open-catalog: #ba2732;
@@ -1047,13 +1048,54 @@ a {
 }
 
 .filter-pc__range {
-  width: 100%;
+  width: 220px;
+  margin-top: 10.85px;
 }
 
+.range-filter__range-controls {
+  padding: 39px 20px 0;
+  height: 41px;
+  margin-bottom: 9px;
+  background: url(../img/bitmap.png) no-repeat;
+  border-radius: 5px;
+  position: relative;
+}
+
+.range-filter__scale {
+  height: 2px;
+  background-color: var(--border-form);
+}
+
+.range-filter__bar {
+  width: 85%;
+  height: 2px;
+  background-color: var(--checkout-buy);
+}
+
+.range-filter__toggle {
+  position: absolute;
+  top: 30px;
+  width: 4px;
+  height: 4px;
+  background-color: var(--toggle);
+  border: 8px solid var(--text-main);
+  border-radius: 50%;
+}
+
+.range-filter__toggle-min {
+  left: 11px;
+}
+
+.range-filter__toggle-max {
+  right: 35px;
+}
+
+/*
 .filter-pc__price {
   min-width: 95px;
   min-height: 38px;
 }
+ */
 
 .filter-pc__text,
 .filter-pc__list,
