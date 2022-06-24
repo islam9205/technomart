@@ -241,6 +241,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
 }
 
 .catalog-title {
@@ -281,6 +282,7 @@ a {
 }
 
 .catalog-new-price {
+  margin-top: auto;
   display: flex;
   justify-content: center;
   align-items: center;
