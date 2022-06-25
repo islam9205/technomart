@@ -1235,8 +1235,41 @@ a {
   border-bottom: none;
 }
 
-.sorting-pc__img:hover {
+.sorting-pc__img:hover path {
   fill: var(--color-frequently-used);
+}
+
+.sorting-pc__img:active path {
+  fill: var(--text-in-header);
+}
+
+/* page-catalog__list */
+
+.page-catalog__list {
+  margin-bottom: 48px;
+}
+
+/* pagination */
+
+.pagination-list {
+  padding-left: 0;
+  display: flex;
+  list-style: none;
+}
+
+.pagination-item {
+  margin-right: 10px;
+}
+
+.pagination-item:last-child {
+  margin-right: 0;
+}
+
+.pagination-link {
+  padding: 10px 15px;
+  border: 1px solid var(--border-card-pages);
+  border-radius: 2px;
+  box-sizing: border-box;
 }
 
 /* page-catalog__about-perforators */
