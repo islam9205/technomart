@@ -1417,7 +1417,7 @@ a {
 .page-footer__link:active,
 .page-footer_color:active {
   opacity: 0.5;
-  border-bottom: none
+  border-bottom: none;
 }
 
 .page-footer__box {
