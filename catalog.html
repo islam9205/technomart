@@ -93,12 +93,12 @@
 
     <main class="page-catalog">
       <div class="container page-catalog__grid">
+        <h1 class="title page-catalog__title">Перфораторы</h1>
         <ul class="page-catalog__breadcrumbs breadcrumbs-pc">
           <li class="breadcrumbs-pc__item"><a class="breadcrumbs-pc__link" href="#">Каталог</a></li>
           <li class="breadcrumbs-pc__item"><a class="breadcrumbs-pc__link" href="#">Инструмент</a></li>
           <li class="breadcrumbs-pc__item">Перфораторы</li>
         </ul>
-        <h1 class="title page-catalog__title">Перфораторы</h1>
         <section class="page-catalog__filter filter-pc">
           <h2 class="subtitle">Фильтр:</h2>
           <form action="https://echo.htmlacademy.ru" method="post">
@@ -165,17 +165,25 @@
           </form>
         </section>
         <section class="page-catalog__sorting sorting-pc">
-          <h2 class="subtitle">Сортировка:</h2>
-          <ul>
-            <li><a class="sorting-pc__link sorting-pc__link-active" href="#">По цене</a></li>
-            <li><a class="sorting-pc__link" href="#">По типу</a></li>
-            <li><a class="sorting-pc__link" href="#">По функционалу</a></li>
-            <li><a href="#"><img src="./img/arrow-up.svg" alt="По убыванию"></a></li>
-            <li><a href="#"><img src="./img/arrow-to-down.svg" alt="По возрастанию"></a></li>
+          <h2 class="subtitle sorting-pc__title">Сортировка:</h2>
+          <ul class="sorting-pc__list">
+            <li class="sorting-pc__item"><a class="sorting-pc__link" href="#">По цене</a></li>
+            <li class="sorting-pc__item"><a class="sorting-pc__link" href="#">По типу</a></li>
+            <li class="sorting-pc__item"><a class="sorting-pc__link" href="#">По функционалу</a></li>
+            <li class="sorting-pc__item"><a href="#">
+              <svg class="sorting-pc__img" width="12" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="m5.66 0 5.5 10h-11" fill="#C5C5C5"/>
+              </svg>
+            </li>
+            <li class="sorting-pc__item"><a href="#">
+              <svg class="sorting-pc__img" width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.5 10 0 0h11" fill="#C5C5C5"/>
+              </svg>
+            </a></li>
           </ul>
         </section>
         <section>
-          <h2>Карточки товаров</h2>
+          <h2 class="visuallyhidden">Карточки товаров</h2>
           <ul class="catalog-list">
             <li class="catalog-item">
               <a href="blank.html">

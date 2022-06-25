@@ -969,11 +969,6 @@ a {
   gap: 20px;
 }
 
-.page-catalog__title {
-  grid-area: page-catalog-title;
-  font-family: 'Cuprum', 'Arial', sans-serif;
-}
-
 .page-catalog__filter,
 .page-catalog__sorting {
   text-transform: uppercase;
@@ -990,13 +985,21 @@ a {
   line-height: 18px;
 }
 
+.page-catalog__title {
+  margin: 0;
+  padding: 30px;
+  grid-area: page-catalog-title;
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  background-color: var(--menu-footer-upper);
+}
+
 /* page-catalog__breadcrumbs */
 
 .page-catalog__breadcrumbs {
   grid-area: breadcrumbs;
   display: flex;
   margin-top: 21px;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   padding-left: 14px;
   font-size: 13px;
   line-height: 18px;
@@ -1180,6 +1183,38 @@ a {
 
 .page-catalog__sorting {
   grid-area: sorting;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sorting-pc__title {
+  margin-bottom: 8px;
+}
+
+.sorting-pc__list {
+  margin: 0;
+  display: flex;
+}
+
+.sorting-pc__item:first-child {
+  margin-right: 70px;
+}
+
+.sorting-pc__item:nth-child(2) {
+  margin-right: 65px;
+}
+
+.sorting-pc__item:nth-child(3) {
+  margin-right: 46px;
+}
+
+.sorting-pc__item:nth-child(4) {
+  margin-right: 21px;
+}
+
+.sorting-pc__item:last-child {
+  margin-right: 17px;
 }
 
 .sorting-pc__link {
@@ -1189,10 +1224,19 @@ a {
   border-bottom: 1px dotted var(--text-in-header);
 }
 
-.sorting-pc__link-active {
+.sorting-pc__link:hover {
+  opacity: 1;
+  border-bottom: 1px solid var(--text-in-header);
+}
+
+.sorting-pc__link:active {
   color: var(--text-in-header);
   opacity: 1;
   border-bottom: none;
+}
+
+.sorting-pc__img:hover {
+  fill: var(--color-frequently-used);
 }
 
 /* page-catalog__about-perforators */
