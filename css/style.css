@@ -1411,7 +1411,7 @@ a {
 }
 
 .page-footer_color:hover {
-  border-bottom: var(--menu-footer-lower);
+  border-bottom: 1px solid var(--menu-footer-lower);
 }
 
 .page-footer__link:active,
@@ -1449,6 +1449,34 @@ a {
 
 .box-pf__item {
   margin-right: 1px;
+}
+
+.box-pf__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.box-pf__path {
+  border-radius: 50%;
+}
+
+.box-pf__link:hover .box-pf__path,
+.box-pf__link:active .box-pf__path {
+  fill: var(--text-in-header);
+}
+/*
+.box-pf__link:hover path,
+.box-pf__link:active path {
+  fill: var();
+}
+ */
+.box-pf__link-active:active {
+  color: var(--text-in-header);
+  opacity: 1;
 }
 /*
 .box-pf__text {
