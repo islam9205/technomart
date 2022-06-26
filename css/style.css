@@ -332,6 +332,8 @@ a {
   background: var(--checkout-buy);
   box-shadow: inset 0px -3px 0px var(--peace-buy);
   border: none;
+  position: relative;
+  z-index: 10;
 }
 
 .catalog-button-buy:hover {
@@ -1457,32 +1459,18 @@ a {
   align-items: center;
   width: 44px;
   height: 44px;
-  border-radius: 50%;
-}
-
-.box-pf__path {
-  border-radius: 50%;
 }
 
 .box-pf__link:hover .box-pf__path,
 .box-pf__link:active .box-pf__path {
   fill: var(--text-in-header);
 }
-/*
-.box-pf__link:hover path,
-.box-pf__link:active path {
-  fill: var();
-}
- */
+
 .box-pf__link-active:active {
   color: var(--text-in-header);
   opacity: 1;
 }
-/*
-.box-pf__text {
-  justify-self: end;
-}
- */
+
 /* reverse-connection and map */
 
 .reverse-connection,
