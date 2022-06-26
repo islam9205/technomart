@@ -1459,6 +1459,7 @@ a {
   align-items: center;
   width: 44px;
   height: 44px;
+  border-radius: 50%;
 }
 
 .box-pf__link:hover .box-pf__path,
@@ -1480,8 +1481,26 @@ a {
 
 /* reverse-connection */
 
+.reverse-connection {
+  padding-top: 39px;
+  width: 620px;
+  position: absolute;
+  top: 2560px;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: var(--text-main);
+}
+
 .form-rc__box {
   display: flex;
+}
+
+.form-rc__text {
+  margin-top: 0;
+}
+
+.form-rc__label {
+  display: block;
 }
 
 .form-rc__input,
