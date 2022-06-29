@@ -78,6 +78,7 @@
   --promo-block-active: rgba(169, 169, 169, 0.3);
   --toggle: #ababab;
   --separator: #444;
+  --box-button: #f4f4f4;
 
   /* background color on action */
   --cry-logo-open-catalog: #ba2732;
@@ -881,6 +882,7 @@ a {
 
 .contacts {
   padding: 70px 0 70px;
+  position: relative;
 }
 
 .contacts__box {
@@ -1374,7 +1376,6 @@ a {
 .page-footer__container {
   display: grid;
   grid-template-columns: auto 1fr;
-  /* gap: 40px; */
 }
 
 .page-footer__img {
@@ -1484,22 +1485,33 @@ a {
 .reverse-connection {
   padding-top: 39px;
   width: 620px;
+  position: relative;
   position: absolute;
-  top: 2560px;
+  top: 14px;
   left: 50%;
   transform: translate(-50%);
   background-color: var(--text-main);
 }
 
+.form-rc__box,
+.form-rc__text-box {
+  margin: 0 auto;
+  width: 460px;
+}
+
 .form-rc__box {
+  margin-bottom: 13px;
   display: flex;
+  justify-content: space-between;
 }
 
 .form-rc__text {
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 .form-rc__label {
+  margin-bottom: 18px;
   display: block;
 }
 
@@ -1511,16 +1523,42 @@ a {
 .form-rc__input {
   width: 220px;
   height: 38px;
+  box-sizing: border-box;
+}
+
+.form-rc__text-box {
+  margin-bottom: 34px;
 }
 
 .form-rc__text-mail {
   width: 100%;
   max-height: 114px;
   resize: none;
+  box-sizing: border-box;
+}
+
+.form-rc__button-box {
+  padding: 37px 80px;
+  background-color: var(--box-button);
 }
 
 .form-rc__button {
+  padding-left: 198.21px;
+  padding-right: 199.79px;
+  display: block;
   border: none;
+}
+
+.reverse-connection__button {
+  width: 21px;
+  height: 21px;
+  border: none;
+  background-color: var(--text-main);
+  background-image: url(../img/icon-close.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 14px;
+  right: 11px;
 }
 
 /* added-to-cart */

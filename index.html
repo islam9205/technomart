@@ -285,6 +285,29 @@
             <button class="button contacts__button" type="button">Заблудились? Напишите нам!</button>
           </section>
         </div>
+        <section class="visuallyhidden reverse-connection">
+          <h2 class="visuallyhidden">Форма обратной связи</h2>
+          <form class="reverse-connection__form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="form-rc__box">
+              <p class="form-rc__text">
+                <label class="form-rc__label" for="name">Ваше имя:</label>
+                <input class="form-rc__input" type="text" id="name" name="name" placeholder="Имя Фамилия">
+              </p>
+              <p class="form-rc__text">
+                <label class="form-rc__label" for="e-mail">Ваш e-mail:</label>
+                <input class="form-rc__input" type="text" id="e-mail" name="e-mail" placeholder="email@example.com">
+              </p>
+            </div>
+            <p class="form-rc__text-box">
+              <label for="text">Текст письма:</label>
+              <textarea class="form-rc__text-mail" name="text" id="text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+            </p>
+            <div class="form-rc__button-box">
+              <button class="button form-rc__button" type="submit">Отправить</button>
+            </div>
+          </form>
+          <button class="reverse-connection__button" type="button"></button>
+        </section>
       </section>
     </main>
 
@@ -357,27 +380,7 @@
       </section>
     </footer>
 
-    <section class="reverse-connection">
-      <h2 class="visuallyhidden">Форма обратной связи</h2>
-      <form class="reverse-connection__form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="form-rc__box">
-          <p class="form-rc__text">
-            <label class="form-rc__label" for="name">Ваше имя:</label>
-            <input class="form-rc__input" type="text" id="name" name="name" placeholder="Имя Фамилия">
-          </p>
-          <p class="form-rc__text">
-            <label class="form-rc__label" for="e-mail">Ваш e-mail:</label>
-            <input class="form-rc__input" type="text" id="e-mail" name="e-mail" placeholder="email@example.com">
-          </p>
-        </div>
-        <p>
-          <label for="text">Текст письма:</label>
-          <textarea class="form-rc__text-mail" name="text" id="text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-        </p>
-        <button class="button form-rc__button" type="submit">Отправить</button>
-      </form>
-      <button type="button">Закрыть</button>
-    </section>
+
 
     <section class="map">
       <h2 class="visuallyhidden">Как до нас добраться</h2>
