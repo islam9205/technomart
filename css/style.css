@@ -1480,6 +1480,18 @@ a {
   border-top: 7px solid var(--text-in-header);
 }
 
+.popup-button {
+  width: 21px;
+  height: 21px;
+  border: none;
+  background-color: inherit;
+  background-image: url(../img/icon-close.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 14px;
+  right: 11px;
+}
+
 /* reverse-connection */
 
 .reverse-connection {
@@ -1547,18 +1559,6 @@ a {
   padding-right: 199.79px;
   display: block;
   border: none;
-}
-
-.reverse-connection__button {
-  width: 21px;
-  height: 21px;
-  border: none;
-  background-color: var(--text-main);
-  background-image: url(../img/icon-close.png);
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 14px;
-  right: 11px;
 }
 
 /* map */
