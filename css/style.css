@@ -1477,7 +1477,12 @@ a {
 
 .reverse-connection,
 .map {
+  display: none;
   border-top: 7px solid var(--text-in-header);
+}
+
+.reverse-connection {
+  display: block;
 }
 
 .popup-button {
