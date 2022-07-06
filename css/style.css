@@ -1461,6 +1461,7 @@ a {
   align-items: center;
   width: 44px;
   height: 44px;
+  background-color: var(--social-network);
   border-radius: 50%;
 }
 
@@ -1495,11 +1496,11 @@ a {
 }
 
 /* Проверка как отображается */
-
+/*
 .reverse-connection {
   display: block;
 }
-
+ */
 
 .popup-button {
   width: 21px;
