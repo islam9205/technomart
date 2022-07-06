@@ -1478,13 +1478,20 @@ a {
 .reverse-connection,
 .map {
   display: none;
+  position: fixed;
+  top: 160px;
+  left: 50%;
+  transform: translate(-50%);
   border-top: 7px solid var(--text-in-header);
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.75);
 }
 
-.reverse-connection {
+/* Проверка как отображается */
+/*
+.map {
   display: block;
 }
-
+ */
 .popup-button {
   width: 21px;
   height: 21px;
@@ -1502,11 +1509,6 @@ a {
 .reverse-connection {
   padding-top: 39px;
   width: 620px;
-  position: relative;
-  position: absolute;
-  top: 14px;
-  left: 50%;
-  transform: translate(-50%);
   background-color: var(--text-main);
 }
 
@@ -1568,11 +1570,8 @@ a {
 
 /* map */
 
-.map {
-  position: absolute;
-  top: 14px;
-  left: 50%;
-  transform: translate(-50%);
+.map img {
+  display: block;
 }
 
 /* added-to-cart */
