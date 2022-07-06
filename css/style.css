@@ -93,6 +93,7 @@
   /* shadow colors */
   --peace-buy: #367315;
   --slider-ervices: #405069;
+  --popup-shadow: rgba(0, 0, 0, 0.75);
 
 
   /* border colors */
@@ -1473,25 +1474,33 @@ a {
   opacity: 1;
 }
 
-/* reverse-connection and map */
+/* Reverse-connection and Map and Added-to-cart */
 
 .reverse-connection,
-.map {
+.map,
+.added-to-cart {
   display: none;
   position: fixed;
   top: 160px;
   left: 50%;
   transform: translate(-50%);
   border-top: 7px solid var(--text-in-header);
-  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 20px 40px var(--popup-shadow);
+}
+
+.reverse-connection,
+.added-to-cart {
+  width: 620px;
+  background-color: var(--text-main);
 }
 
 /* Проверка как отображается */
-/*
-.map {
+
+.reverse-connection {
   display: block;
 }
- */
+
+
 .popup-button {
   width: 21px;
   height: 21px;
@@ -1502,14 +1511,13 @@ a {
   position: absolute;
   top: 14px;
   right: 11px;
+  cursor: pointer;
 }
 
 /* reverse-connection */
 
 .reverse-connection {
   padding-top: 39px;
-  width: 620px;
-  background-color: var(--text-main);
 }
 
 .form-rc__box,
@@ -1576,24 +1584,46 @@ a {
 
 /* added-to-cart */
 
-.added-to-cart {
-  border-top: 7px solid var(--text-in-header);
-}
-
 .added-to-cart__title {
+  margin-top: 48px;
+  margin-bottom: 48px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 24px;
   line-height: 30px;
 }
 
 .added-to-cart__title::before {
-  content: url(../img/icon-mark.svg);
+  content: '';
+  width: 66px;
+  height: 66px;
+  background-image: url(../img/icon-mark.svg);
+  background-repeat: no-repeat;
+  margin-right: 20px;
 }
 
 .added-to-cart__box {
+  padding-top: 37px;
+  padding-bottom: 37px;
+  display: flex;
+  justify-content: center;
   background-color: var(--added-to-cart);
 }
 
+.added-to-cart__link,
 .added-to-cart__button {
+  padding-top: 11px;
+  padding-bottom: 9px;
+  width: 192px;
+  display: flex;
+  justify-content: center;
+}
+
+.added-to-cart__button {
+  margin-left: 10px;
+  align-items: center;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
