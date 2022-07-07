@@ -960,7 +960,8 @@ a {
 .page-catalog__grid {
   margin-bottom: 59px;
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  /* grid-template-columns: 1fr 3fr; */
+  grid-template-columns: 220px 700px;
   grid-template-areas:
     "breadcrumbs breadcrumbs"
     "page-catalog-title page-catalog-title"
@@ -1001,6 +1002,7 @@ a {
 .page-catalog__breadcrumbs {
   grid-area: breadcrumbs;
   display: flex;
+  flex-wrap: wrap;
   margin-top: 21px;
   margin-bottom: 0;
   padding-left: 14px;
@@ -1012,6 +1014,7 @@ a {
 
 .breadcrumbs-pc__item {
   margin-left: 17.86px;
+  margin-bottom: 10px;
   padding-left: 15.61px;
   background: url(../img/icon-right-small.png) no-repeat 0 50%;
 }
@@ -1024,6 +1027,7 @@ a {
 
 .page-catalog__filter {
   grid-area: filter;
+  overflow: hidden;
 }
 
 .filter-pc__fieldset {
@@ -1286,7 +1290,7 @@ a {
 }
 
 .page-catalog__list {
-  width: 700px;
+  /* width: 700px; */
   margin-bottom: 48px;
 }
 
