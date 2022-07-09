@@ -1517,11 +1517,11 @@ a {
 }
 
 /* Проверка как отображается */
-
+/*
 .map {
   display: block;
 }
-
+ */
 .popup-button {
   width: 21px;
   height: 21px;
@@ -1599,7 +1599,14 @@ a {
 
 /* map */
 
-.map img {
+.map {
+  width: 943px;
+  height: 449px;
+  background-image: url(../img/card.png);
+  background-repeat: no-repeat;
+}
+
+.map iframe {
   display: block;
 }
 
