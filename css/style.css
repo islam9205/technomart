@@ -377,6 +377,7 @@ a {
 
 .upper-mh__box {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .upper-mh__link-logo {
