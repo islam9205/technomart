@@ -1383,7 +1383,7 @@ a {
 .page-footer__item {
   margin-left: 58px;
   /* margin-bottom: 24px; */
-  /* height: 20px; */
+  height: 20px;
 }
 
 .page-footer__link {
