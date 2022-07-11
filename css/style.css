@@ -256,12 +256,13 @@ a {
 }
 
 .catalog-pic {
+  margin-bottom: 8px;
   order: -1;
   display: flex;
   align-items: center;
   height: 170px;
   background-color: var(--border-fieldset);
-  margin-bottom: 8px;
+  overflow: hidden;
 }
 
 .catalog-pic img {
@@ -864,6 +865,7 @@ a {
 
 .contacts__box1 {
   align-items: start;
+  max-width: 450px;
 }
 
 .contacts__title {
@@ -1367,7 +1369,7 @@ a {
 
 .page-footer__text {
   margin-bottom: 54px;
-  min-width: 333px;
+  max-width: 333px;
 }
 
 .page-footer__list {
@@ -1380,7 +1382,8 @@ a {
 
 .page-footer__item {
   margin-left: 58px;
-  margin-bottom: 34px;
+  /* margin-bottom: 24px; */
+  /* height: 20px; */
 }
 
 .page-footer__link {
