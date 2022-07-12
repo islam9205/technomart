@@ -1277,7 +1277,6 @@ a {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-
 }
 
 .pagination-item {
@@ -1357,6 +1356,10 @@ a {
   list-style: none;
 }
 
+.page-footer__box1 {
+  margin-bottom: 36px;
+}
+
 .page-footer__container {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -1368,7 +1371,6 @@ a {
 }
 
 .page-footer__text {
-  margin-bottom: 54px;
   max-width: 333px;
 }
 
@@ -1378,11 +1380,12 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: end;
+  height: min-content;
 }
 
 .page-footer__item {
   margin-left: 58px;
-  /* margin-bottom: 24px; */
+  margin-bottom: 38px;
   height: 20px;
 }
 
