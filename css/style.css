@@ -301,9 +301,12 @@ a {
 .catalog-box {
   margin-top: 0;
   margin-bottom: 0;
+  padding-bottom: 38px;
   display: none;
+  flex-direction: column;
+  align-items: center;
   width: 95%;
-  height: 170px;
+  max-height: 95%;
   background-color: var(--text-main);
   box-sizing: border-box;
   position: absolute;
@@ -312,9 +315,14 @@ a {
 
 .catalog-item:hover .catalog-box {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+}
+
+.catalog-box > *:first-child {
+  margin-top: 38px;
+}
+
+.catalog-box > *:last-child {
+  margin-bottom: 0;
 }
 
 .catalog-box button {
@@ -324,15 +332,18 @@ a {
 
 .catalog-button-buy,
 .catalog-button-bookmarks {
+  width: 135px;
   font-family: 'Cuprum', 'Arial', sans-serif;
   font-size: 14px;
   line-height: 18px;
+  text-align: center;
   text-transform: uppercase;
   cursor: pointer;
+  overflow: auto;
 }
 
 .catalog-button-buy {
-  padding: 10px 40px 10px 53px;
+  padding: 10px;
   color: var(--text-main);
   background: var(--checkout-buy);
   box-shadow: inset 0px -3px 0px var(--peace-buy);
@@ -350,7 +361,7 @@ a {
 }
 
 .catalog-button-bookmarks {
-  padding: 11px 34px 9px 33px;
+  padding: 11px 10px 9px;
   color: var(--text-heading);
   background-color: var(--text-main);
   border: 3px solid var(--checkout-buy);
@@ -1181,7 +1192,7 @@ a {
 
 .filter-pc__button {
   border: 1px solid var(--border-card-pages);
-  padding: 10px 0;
+  padding: 10px 15px;
   width: 100%;
   font-size: 13px;
   line-height: 18px;
