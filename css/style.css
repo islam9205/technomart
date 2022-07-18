@@ -313,7 +313,8 @@ a {
   top: 0;
 }
 
-.catalog-item:hover .catalog-box {
+.catalog-item:hover .catalog-box,
+.catalog-item a:focus + .catalog-box {
   display: flex;
 }
 
