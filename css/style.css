@@ -1153,7 +1153,8 @@ a {
   left: 6px;
 }
 
-.filter-pc__input:hover:checked + .filter-pc__label::after {
+.filter-pc__input:hover:checked + .filter-pc__label::after,
+.filter-pc__input:focus:checked + .filter-pc__label::after {
   background: url(../img/shape-hover.svg) no-repeat;
 }
 
@@ -1167,7 +1168,8 @@ a {
   border-radius: 50%;
 }
 
-.filter-pc__label-radio:hover:before {
+.filter-pc__label-radio:hover:before,
+.filter-pc__label-radio:focus:before {
   border: 3px solid var(--guidance-blocked-checkbox);
 }
 
@@ -1182,7 +1184,8 @@ a {
   left: 10px;
 }
 
-.filter-pc__input:hover:checked + .filter-pc__label-radio::after {
+.filter-pc__input:hover:checked + .filter-pc__label-radio::after,
+.filter-pc__input:focus:checked + .filter-pc__label-radio::after {
   background-color: var(--guidance-blocked-checkbox);
 }
 
