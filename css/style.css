@@ -314,7 +314,7 @@ a {
 }
 
 .catalog-item:hover .catalog-box,
-.catalog-item a:focus + .catalog-box {
+.catalog-item:focus-within .catalog-box {
   display: flex;
 }
 
