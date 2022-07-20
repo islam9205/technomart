@@ -1125,22 +1125,22 @@ a {
 
 .filter-pc__label::before {
   content: '';
-  width: 22px;
-  height: 22px;
-  border: 2px solid var(--border-form);
+  width: 19px;
+  height: 19px;
+  border: 4px solid var(--border-form);
   border-radius: 5px;
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.filter-pc__label:hover::before {
-  border: 2px solid var(--guidance-blocked-checkbox);
+.filter-pc__label:hover::before,
+.filter-pc__input:focus + .filter-pc__label::before {
+  border: 4px solid var(--guidance-blocked-checkbox);
 }
 
-.filter-pc__label:disabled::before {
+.filter-pc__input:disabled + .filter-pc__label {
   opacity: 0.3;
-  border: 2px solid var(--guidance-blocked-checkbox);
 }
 
 .filter-pc__input:checked + .filter-pc__label::after {
@@ -1158,11 +1158,13 @@ a {
   background: url(../img/shape-hover.svg) no-repeat;
 }
 
+.filter-pc__input:disabled + .filter-pc__label::before,
+.filter-pc__input:disabled + .filter-pc__label::after,
 .filter-pc__input:disabled:checked + .filter-pc__label::before,
 .filter-pc__input:disabled:checked + .filter-pc__label::after {
   opacity: 0.3;
 }
-
+/*
 .filter-pc__label-radio::before {
   border: 3px solid var(--border-form);
   border-radius: 50%;
@@ -1193,7 +1195,7 @@ a {
 .filter-pc__input:disabled:checked + .filter-pc__label-radio::after {
   opacity: 0.3;
 }
-
+ */
 .filter-pc__button {
   border: 1px solid var(--border-card-pages);
   padding: 10px 15px;
