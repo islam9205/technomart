@@ -1125,9 +1125,9 @@ a {
 
 .filter-pc__label::before {
   content: '';
-  width: 19px;
-  height: 19px;
-  border: 4px solid var(--border-form);
+  width: 20px;
+  height: 20px;
+  border: 3px solid var(--border-form);
   border-radius: 5px;
   position: absolute;
   top: 0;
@@ -1136,21 +1136,17 @@ a {
 
 .filter-pc__label:hover::before,
 .filter-pc__input:focus + .filter-pc__label::before {
-  border: 4px solid var(--guidance-blocked-checkbox);
-}
-
-.filter-pc__input:disabled + .filter-pc__label {
-  opacity: 0.3;
+  border: 3px solid var(--guidance-blocked-checkbox);
 }
 
 .filter-pc__input:checked + .filter-pc__label::after {
   content: '';
   width: 22px;
-  height: 19px;
+  height: 17px;
   background: url(../img/shape.svg) no-repeat;
   position: absolute;
   top: 3px;
-  left: 6px;
+  left: 7px;
 }
 
 .filter-pc__input:hover:checked + .filter-pc__label::after,
@@ -1158,21 +1154,23 @@ a {
   background: url(../img/shape-hover.svg) no-repeat;
 }
 
-.filter-pc__input:disabled + .filter-pc__label::before,
-.filter-pc__input:disabled + .filter-pc__label::after,
-.filter-pc__input:disabled:checked + .filter-pc__label::before,
+.filter-pc__input:disabled + .filter-pc__label,
 .filter-pc__input:disabled:checked + .filter-pc__label::after {
   opacity: 0.3;
 }
-/*
+
+
 .filter-pc__label-radio::before {
-  border: 3px solid var(--border-form);
+  width: 21px;
+  height: 21px;
+  top: -2px;
+  border: 4px solid var(--border-form);
   border-radius: 50%;
 }
 
 .filter-pc__label-radio:hover:before,
-.filter-pc__label-radio:focus:before {
-  border: 3px solid var(--guidance-blocked-checkbox);
+.filter-pc__input:focus + .filter-pc__label-radio::before {
+  border: 4px solid var(--guidance-blocked-checkbox);
 }
 
 .filter-pc__input:checked + .filter-pc__label-radio::after {
@@ -1182,8 +1180,8 @@ a {
   border-radius: 50%;
   background-color: var(--border-form);
   position: absolute;
-  top: 9px;
-  left: 10px;
+  top: 8px;
+  left: 10.5px;
 }
 
 .filter-pc__input:hover:checked + .filter-pc__label-radio::after,
@@ -1191,11 +1189,10 @@ a {
   background-color: var(--guidance-blocked-checkbox);
 }
 
-.filter-pc__input:disabled + .filter-pc__label-radio::before,
-.filter-pc__input:disabled:checked + .filter-pc__label-radio::after {
+.filter-pc__input:disabled + .filter-pc__label-radio {
   opacity: 0.3;
 }
- */
+
 .filter-pc__button {
   border: 1px solid var(--border-card-pages);
   padding: 10px 15px;
@@ -1502,10 +1499,11 @@ a {
 
 /* Проверка как отображается */
 /*
-.map {
+.reverse-connection {
   display: block;
 }
  */
+
 .popup-button {
   width: 21px;
   height: 21px;
