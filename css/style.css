@@ -105,6 +105,8 @@
 
   /* gradient colors */
   --social-network: #212a3a;
+
+  --width: 620px;
 }
 
 .page {
@@ -1485,24 +1487,79 @@ a {
   display: none;
   position: fixed;
   top: 160px;
-  left: 50%;
-  transform: translate(-50%);
+  left: var(50% - var(--width)/2);
+  /* left: 50%; */
+
   border-top: 7px solid var(--text-in-header);
   box-shadow: 0px 20px 40px var(--popup-shadow);
 }
 
 .reverse-connection,
 .added-to-cart {
-  width: 620px;
+  /* width: 620px; */
+  width: var(--width);
   background-color: var(--text-main);
 }
 
-/* Проверка как отображается */
-/*
-.reverse-connection {
+/* .reverse-connection {
   display: block;
+} */
+
+.modal-show {
+  display: block;
+
+  animation: bounce 0.6s;
 }
- */
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+/* Начало блока анимации */
+
+@keyframes bounce {
+
+
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+/* Конец блока анимации */
 
 .popup-button {
   width: 21px;
