@@ -106,6 +106,7 @@
   /* gradient colors */
   --social-network: #212a3a;
 
+  /* width popup */
   --width: 620px;
 }
 
@@ -1485,29 +1486,22 @@ a {
 .map,
 .added-to-cart {
   display: none;
+  margin-left: calc(var(--width) / -2);
   position: fixed;
   top: 160px;
-  left: var(50% - var(--width)/2);
-  /* left: 50%; */
-
+  left: 50%;
   border-top: 7px solid var(--text-in-header);
   box-shadow: 0px 20px 40px var(--popup-shadow);
 }
 
 .reverse-connection,
 .added-to-cart {
-  /* width: 620px; */
   width: var(--width);
   background-color: var(--text-main);
 }
 
-/* .reverse-connection {
-  display: block;
-} */
-
 .modal-show {
   display: block;
-
   animation: bounce 0.6s;
 }
 
@@ -1518,8 +1512,6 @@ a {
 /* Начало блока анимации */
 
 @keyframes bounce {
-
-
   0% {
     transform: translateY(-2000px);
   }

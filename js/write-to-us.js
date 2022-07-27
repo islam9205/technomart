@@ -1,56 +1,39 @@
-const loginLink = document.querySelector(".contacts__button");
-const loginPopup = document.querySelector(".reverse-connection");
-const loginClose = loginPopup.querySelector(".popup-button");
-const loginForm = loginPopup.querySelector(".reverse-connection__form");
-const loginLogin = loginPopup.querySelector(".form-rc__input-name");
-const loginPassword = loginPopup.querySelector(".login-icon-password");
+const contactsButton = document.querySelector(".contacts__button");
+const writeToUsPopap = document.querySelector(".reverse-connection");
+const loginClose = writeToUsPopap.querySelector(".popup-button");
+const loginForm = writeToUsPopap.querySelector(".reverse-connection__form");
+const loginLogin = writeToUsPopap.querySelector(".form-rc__input-name");
+const mailInput = writeToUsPopap.querySelector(".form-rc__input-mail");
+const textMail = writeToUsPopap.querySelector(".form-rc__text-mail");
+const loginPassword = writeToUsPopap.querySelector(".login-icon-password");
 
-let isStorageSupport = true;
-let storage = "";
-
-try {
-  storage = localStorage.getItem("login");
-} catch (err) {
-  isStorageSupport = false;
-}
-
-loginLink.addEventListener("click", function (evt) {
+contactsButton.addEventListener("click", function (evt) {
   evt.preventDefault();
-  loginPopup.classList.add("modal-show");
-
-  /* if (storage) {
-    loginLogin.value = storage;
-    loginPassword.focus();
-  } else {
-    loginLogin.focus();
-  } */
+  writeToUsPopap.classList.add("modal-show");
+  loginLogin.focus();
 });
 
 loginClose.addEventListener("click", function (evt) {
   evt.preventDefault();
-  loginPopup.classList.remove("modal-show");
-  loginPopup.classList.remove("modal-error");
+  writeToUsPopap.classList.remove("modal-show");
+  writeToUsPopap.classList.remove("modal-error");
 });
 
 loginForm.addEventListener("submit", function (evt) {
-  if (!loginLogin.value || !loginPassword.value) {
+  if (!loginLogin.value || !mailInput.value || !textMail.value) {
     evt.preventDefault();
-    loginPopup.classList.remove("modal-error");
-    loginPopup.offsetWidth = loginPopup.offsetWidth;
-    loginPopup.classList.add("modal-error");
-  } else {
-    if (isStorageSupport) {
-      localStorage.setItem("login", loginLogin.value);
-    }
+    writeToUsPopap.classList.remove("modal-error");
+    writeToUsPopap.offsetWidth = writeToUsPopap.offsetWidth;
+    writeToUsPopap.classList.add("modal-error");
   }
 });
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
-    if (loginPopup.classList.contains("modal-show")) {
+    if (writeToUsPopap.classList.contains("modal-show")) {
       evt.preventDefault();
-      loginPopup.classList.remove("modal-show");
-      loginPopup.classList.remove("modal-error");
+      writeToUsPopap.classList.remove("modal-show");
+      writeToUsPopap.classList.remove("modal-error");
     }
   }
 });
