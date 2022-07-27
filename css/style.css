@@ -107,7 +107,8 @@
   --social-network: #212a3a;
 
   /* width popup */
-  --width: 620px;
+  --width-form: 620px;
+  --width-map: 943px;
 }
 
 .page {
@@ -1486,7 +1487,7 @@ a {
 .map,
 .added-to-cart {
   display: none;
-  margin-left: calc(var(--width) / -2);
+  margin-left: calc(var(--width-form) / -2);
   position: fixed;
   top: 160px;
   left: 50%;
@@ -1496,7 +1497,7 @@ a {
 
 .reverse-connection,
 .added-to-cart {
-  width: var(--width);
+  width: var(--width-form);
   background-color: var(--text-main);
 }
 
@@ -1631,7 +1632,8 @@ a {
 /* map */
 
 .map {
-  width: 943px;
+  margin-left: calc(var(--width-map) / -2);
+  width: var(--width-map);
   height: 449px;
   background-image: url(../img/card.png);
   background-repeat: no-repeat;

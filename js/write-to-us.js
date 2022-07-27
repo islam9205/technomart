@@ -1,26 +1,25 @@
 const contactsButton = document.querySelector(".contacts__button");
 const writeToUsPopap = document.querySelector(".reverse-connection");
-const loginClose = writeToUsPopap.querySelector(".popup-button");
-const loginForm = writeToUsPopap.querySelector(".reverse-connection__form");
-const loginLogin = writeToUsPopap.querySelector(".form-rc__input-name");
+const closeButton = writeToUsPopap.querySelector(".popup-button");
+const form = writeToUsPopap.querySelector(".reverse-connection__form");
+const nameInput = writeToUsPopap.querySelector(".form-rc__input-name");
 const mailInput = writeToUsPopap.querySelector(".form-rc__input-mail");
 const textMail = writeToUsPopap.querySelector(".form-rc__text-mail");
-const loginPassword = writeToUsPopap.querySelector(".login-icon-password");
 
 contactsButton.addEventListener("click", function (evt) {
   evt.preventDefault();
   writeToUsPopap.classList.add("modal-show");
-  loginLogin.focus();
+  nameInput.focus();
 });
 
-loginClose.addEventListener("click", function (evt) {
+closeButton.addEventListener("click", function (evt) {
   evt.preventDefault();
   writeToUsPopap.classList.remove("modal-show");
   writeToUsPopap.classList.remove("modal-error");
 });
 
-loginForm.addEventListener("submit", function (evt) {
-  if (!loginLogin.value || !mailInput.value || !textMail.value) {
+form.addEventListener("submit", function (evt) {
+  if (!nameInput.value || !mailInput.value || !textMail.value) {
     evt.preventDefault();
     writeToUsPopap.classList.remove("modal-error");
     writeToUsPopap.offsetWidth = writeToUsPopap.offsetWidth;
